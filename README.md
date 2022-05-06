@@ -11,4 +11,5 @@
 Of course! Contributions are always welcome. Just make a pull request [here](https://github.com/MyNameIsRinax/Guess-The-Pixel/pulls)!
 
 ## License
-WIP :)
+* The JSON code files are licensed under the **GPLV2 license** [(see GPLv2.md)](https://github.com/MyNameIsRinax/Guess-The-Pixel/blob/main/GPLv2.md)
+* The game name and all other assets, including but not limited to image and audio files, are exclusive property of Rinexus Games.
