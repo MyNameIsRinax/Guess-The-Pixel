@@ -1,0 +1,2 @@
+* The JSON code files are licensed under the **GPLV2 license (see GPLv2.md)**
+* The game name and all other assets, including but not limited to image and audio files, are exclusive property of Rinexus Games.
