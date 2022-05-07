@@ -262,15 +262,7 @@
           "value": "null"
         }
       ],
-      "effects": [
-        {
-          "effectType": "",
-          "name": "Effect",
-          "doubleParameters": {},
-          "stringParameters": {},
-          "booleanParameters": {}
-        }
-      ],
+      "effects": [],
       "behaviors": []
     }
   ],

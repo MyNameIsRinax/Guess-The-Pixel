@@ -1168,6 +1168,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2188,6 +2189,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2383,7 +2385,7 @@
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
-                    "\"Event (message) has been sent\"",
+                    "\"Event (wordGuessed) has been sent\"",
                     "\"info\"",
                     "\"Events\""
                   ],
@@ -2594,6 +2596,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2887,6 +2890,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3084,6 +3088,18 @@
                           "parameters": [
                             "",
                             "\"Words\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "DebuggerTools::ConsoleLog"
+                          },
+                          "parameters": [
+                            "\"Event (send_GuessedWord) has been sent\"",
+                            "\"info\"",
+                            "\"Events\""
                           ],
                           "subInstructions": []
                         }
@@ -3804,6 +3820,18 @@
                 "VariableString(recievedData.block.Color)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "\"Event (draw) has been recieved\"",
+                "\"info\"",
+                "\"Events\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -3927,6 +3955,18 @@
                 "1"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "\"Event (wordGuessed) has been recieved\"",
+                "\"info\"",
+                "\"Events\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -4030,6 +4070,18 @@
               "parameters": [
                 "",
                 "\"UpdateTimer\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "\"Event (send_GuessedWord) has been recieved\"",
+                "\"info\"",
+                "\"Events\""
               ],
               "subInstructions": []
             }
