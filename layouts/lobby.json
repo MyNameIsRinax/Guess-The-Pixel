@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5100000000000057,
+    "zoomFactor": 0.25000000000000566,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -182,7 +182,7 @@
       "height": 0,
       "layer": "",
       "locked": false,
-      "name": "NewSprite2",
+      "name": "logo",
       "persistentUuid": "a605881a-18ba-4144-9701-41069373be89",
       "width": 0,
       "x": -170,
@@ -577,16 +577,6 @@
   ],
   "objects": [
     {
-      "name": "NewSprite",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": []
-    },
-    {
       "name": "TextInput",
       "tags": "",
       "type": "TextInput::TextInputObject",
@@ -675,7 +665,7 @@
       }
     },
     {
-      "name": "NewSprite2",
+      "name": "logo",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -812,7 +802,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Hello! Welcome to the magic inside Guess the Pixel!\n\nHere's a simple guide of what these groups are for:\n\nClient (Red)\n➥ Connection to broker - Connects to broker and ICE servers\n➥ Recieved events from Host - This is where the data that are recieved from the host are being handled like player data/list\n\nHost (Orange)\n➥ Send player data to other clients (self explanatory)\n➥ Game Settings - This is where settings such as Max Rounds and Drawing Time are handled\n\nUI (Lime)\n➥Player List - This is where the player list are created and updated\n➥ Button hover and press - Hovering and pressing are handled here. This also where u can start and join a game\n➥ Always running - This is where actions that are runned every frame like background parallex",
+      "comment": "Hello! Welcome to the magic inside Guess the Pixel!\n\nHere's a simple guide of what these groups are for:\n\nClient (Red)\n➥ Connection to broker - Connects to broker and ICE servers\n➥ Recieved events from Host - This is where the data that are recieved from the host are being handled like player data/list\n➥ Disconnection - Removes the disconnected player from the player list and updates the player list\n\nHost (Orange)\n➥ Send player data to other clients (self explanatory)\n➥ Game Settings - This is where settings such as Max Rounds and Drawing Time are handled\n\nUI (Lime)\n➥Player List - This is where the player list are created and updated\n➥ Button hover and press - Hovering and pressing are handled here. This also where u can start and join a game\n➥ Always running - This is where actions that are runned every frame like background parallex",
       "comment2": ""
     },
     {
@@ -1131,6 +1121,57 @@
                     "myID",
                     "=",
                     "P2P::GetID()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 188,
+          "colorG": 180,
+          "colorR": 252,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Disconnection",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::OnDisconnection"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VariableRemoveChild"
+                  },
+                  "parameters": [
+                    "PlayerList",
+                    "P2P::GetLastDisconnectedPeer()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "updatePlayerList",
+                    "True"
                   ],
                   "subInstructions": []
                 }
@@ -1467,6 +1508,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {

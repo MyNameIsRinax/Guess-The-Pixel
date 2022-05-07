@@ -222,6 +222,15 @@
         "name": "assets\\ui\\cursor.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icon/bin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icon\\bin.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -258,6 +267,11 @@
         },
         {
           "name": "anchor",
+          "type": "string",
+          "value": "null"
+        },
+        {
+          "name": "id",
           "type": "string",
           "value": "null"
         }
