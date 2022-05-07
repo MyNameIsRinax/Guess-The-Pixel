@@ -3171,6 +3171,7 @@
           "colorG": 156,
           "colorR": 208,
           "creationTime": 0,
+          "folded": true,
           "name": "Timer",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4043,7 +4044,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Game Events > Timer",
+          "comment": "WIP: Game Events > Timer",
           "comment2": ""
         },
         {
