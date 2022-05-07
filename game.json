@@ -1,0 +1,335 @@
+{
+  "firstLayout": "Lobby",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "43873802-9910-43aa-8de2-3eeb4d021634",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Guess the Pixel",
+    "description": "A drawing guessing game that is heavily inspired by skribbl.io",
+    "author": "Rinexus Games",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": "",
+      "liluo-thumbnail": "assets\\icon\\liluo-thumbnail.png"
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "loadingscreenbg.jpg",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": false,
+      "showProgressBar": true
+    },
+    "authorIds": [
+      "04k8NyykaEcX1dVkWEmXN2OxZDD3"
+    ],
+    "categories": [
+      "multiplayer"
+    ],
+    "playableDevices": [
+      "keyboard"
+    ],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icon/pencil.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icon\\pencil.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/font/arial.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\font\\arial.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "loadingscreenbg.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "loadingscreenbg.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icon/logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icon\\logo.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icon/clock.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icon\\clock.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\button.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\background.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/pallete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\pallete.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/icon/liluo-thumbnail.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\icon\\liluo-thumbnail.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/ui_background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\ui_background.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/canvas_background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\canvas_background.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/canvas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\canvas.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/pixel.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\pixel.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/selected-color.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\selected-color.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ui/cursor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\cursor.png",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [
+    {
+      "height": 32,
+      "name": "background",
+      "tags": "",
+      "texture": "assets\\ui\\background.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "bottomMargin": 24,
+      "height": 32,
+      "leftMargin": 24,
+      "name": "ui_background",
+      "rightMargin": 24,
+      "tags": "",
+      "texture": "assets\\ui\\ui_background.png",
+      "tiled": true,
+      "topMargin": 24,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "anchor",
+          "type": "string",
+          "value": "null"
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "",
+          "name": "Effect",
+          "doubleParameters": {},
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": []
+    }
+  ],
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "GameSettings",
+      "type": "structure",
+      "children": [
+        {
+          "name": "DrawTimer",
+          "type": "string",
+          "value": "80"
+        },
+        {
+          "name": "Round",
+          "type": "string",
+          "value": "3"
+        }
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/lobby"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemasking"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/inputessentials"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/randomwords"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/jeekie"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/readpixels"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}

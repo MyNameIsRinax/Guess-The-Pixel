@@ -1,0 +1,55 @@
+{
+  "author": "",
+  "category": "Network",
+  "description": "Jeekie o7 !!!",
+  "extensionNamespace": "",
+  "fullName": "Jeekie (Jeekie)",
+  "helpPath": "ur mom",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXNlcnZlci1wbHVzIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTQsNEgyMEExLDEgMCAwLDEgMjEsNVY5QTEsMSAwIDAsMSAyMCwxMEg0QTEsMSAwIDAsMSAzLDlWNUExLDEgMCAwLDEgNCw0TTksOEgxMFY2SDlWOE01LDZWOEg3VjZINU04LDE2SDExVjEzSDEzVjE2SDE2VjE4SDEzVjIxSDExVjE4SDhWMTZaIiAvPjwvc3ZnPg==",
+  "name": "Jeekie",
+  "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/server-plus.svg",
+  "shortDescription": "Jeekie extension!!!",
+  "version": "Jeekie",
+  "tags": [
+    "jeekie",
+    "o7"
+  ],
+  "authorIds": [
+    "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1"
+  ],
+  "dependencies": [],
+  "eventsFunctions": [
+    {
+      "description": "Asks jeekie.bot a question o7",
+      "fullName": "Jeekie, bestow your knowledge uppon us",
+      "functionType": "Expression",
+      "group": "",
+      "name": "WorldRandomizer",
+      "private": false,
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "const answers = [\n    \"yes\",\n    \"no\",\n    \"hohoho\",\n    \"jeekie\",\n    \"don't ask stupid questions, buy jeekie.dedi instead\",\n    \"idc, more importantly, jeekie.vps soon.\",\n    \"what does that mean\",\n    \"what about instead we ban @ether\",\n    \"yep\",\n    \"maybe\",\n    \"idk\",\n    \"but its jsut weird\",\n    \"hmm\",\n    \"i know\",\n    \"better than aws\",\n    \"lol\",\n    \"yessir\",\n    \"📸\",\n    \"🧐\"\n];\n/** @type {string} */\nconst question = eventsFunctionContext.getArgument(\"question\");\nconst index = question.split(\"\").reduce((acc, current) => acc += current.charCodeAt(0), 0) % answers.length;\n\neventsFunctionContext.returnValue = answers[index];\n",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Question (for jeekie.bot)",
+          "longDescription": "",
+          "name": "question",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": []
+}

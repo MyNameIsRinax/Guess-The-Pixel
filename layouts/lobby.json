@@ -1,0 +1,2717 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Lobby",
+  "name": "Lobby",
+  "oglFOV": 90,
+  "oglZFar": 500,
+  "oglZNear": 1,
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.4700000000000053,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 347.1344909667969,
+      "customSize": true,
+      "height": 1215.3712158203125,
+      "layer": "",
+      "locked": false,
+      "name": "background",
+      "persistentUuid": "b4fc97ee-060f-4157-9eb6-520dcd35e34d",
+      "width": 1920.5157470703125,
+      "x": -819.7181396484375,
+      "y": -282.1978454589844,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 372.5818176269531,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "ui_background",
+      "persistentUuid": "28f1435d-21ee-4d20-880c-36b9a88553bc",
+      "width": 323,
+      "x": -409,
+      "y": 242,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "playerlist"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 372.5818176269531,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "ui_background",
+      "persistentUuid": "69b3612c-38ac-4e6f-9cc2-2932e065260c",
+      "width": 460,
+      "x": -49,
+      "y": 245.41818237304688,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 30,
+      "layer": "Main",
+      "locked": false,
+      "name": "TextInput",
+      "persistentUuid": "feff000c-f12f-4bb2-b0a0-f5dc351e8d04",
+      "width": 383,
+      "x": -190,
+      "y": 527,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "initialValue",
+          "value": ""
+        },
+        {
+          "name": "placeholder",
+          "value": "Room ID"
+        }
+      ],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "connectID"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 30,
+      "layer": "Main",
+      "locked": false,
+      "name": "TextInput",
+      "persistentUuid": "e5c582db-74db-40d3-be4d-636d2fcdf17d",
+      "width": 383,
+      "x": -190,
+      "y": 306,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "placeholder",
+          "value": "Name"
+        }
+      ],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "playerName"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 30,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "TextInput",
+      "persistentUuid": "245a33a7-12fc-4977-ac26-b15329b3bd59",
+      "width": 383,
+      "x": -10,
+      "y": 295,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "placeholder",
+          "value": "Connecting to server..."
+        }
+      ],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "myID"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "NewSprite2",
+      "persistentUuid": "a605881a-18ba-4144-9701-41069373be89",
+      "width": 0,
+      "x": -170,
+      "y": 39,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 43,
+      "layer": "Main",
+      "locked": false,
+      "name": "Button",
+      "persistentUuid": "1261ba4e-4a70-43ce-ae5d-92a42c8ae116",
+      "width": 426,
+      "x": -210,
+      "y": 350,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "privateroom"
+        },
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "Create Private Room"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 187,
+      "layer": "Main",
+      "locked": false,
+      "name": "ui_background",
+      "persistentUuid": "5571ee89-99f5-4140-a83c-69f47c87361b",
+      "width": 486,
+      "x": -242,
+      "y": 233,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 43,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "Button",
+      "persistentUuid": "953dea47-09b7-4256-bb61-59b76e34d63d",
+      "width": 419,
+      "x": -28,
+      "y": 549,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "start"
+        },
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "Start Game"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 43,
+      "layer": "Main",
+      "locked": false,
+      "name": "Button",
+      "persistentUuid": "30dfef98-8173-4b1a-a933-740b9cae5f9a",
+      "width": 426,
+      "x": -210,
+      "y": 572,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "join"
+        },
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "Join Room"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 187,
+      "layer": "Main",
+      "locked": false,
+      "name": "ui_background",
+      "persistentUuid": "fcaf44dc-af0e-4ec3-be0c-6acc73c9dc51",
+      "width": 486,
+      "x": -242,
+      "y": 455,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 55,
+      "layer": "Main",
+      "locked": false,
+      "name": "Text",
+      "persistentUuid": "07f5fdfe-4416-47fc-91dd-04b6a59782a8",
+      "width": 495,
+      "x": -189,
+      "y": 244,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "[b]Welcome to Guess the Pixel![/b]\n[size=15]This is a guess the drawing game made with GDevelop."
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 55,
+      "layer": "Main",
+      "locked": false,
+      "name": "Text",
+      "persistentUuid": "520fa995-d589-4ac6-91f3-89c17e27915c",
+      "width": 523,
+      "x": -174,
+      "y": 465,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "[b]Play with friends![/b]\n[size=15]Paste the Room ID in the box below and press join."
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 30,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "TextInput",
+      "persistentUuid": "fdf5f902-1cf3-49bb-9734-a69704bd9c88",
+      "width": 383,
+      "x": -10,
+      "y": 405,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "initialValue",
+          "value": "3"
+        },
+        {
+          "name": "placeholder",
+          "value": "Rounds"
+        }
+      ],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "rounds"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "inputType",
+          "type": "string",
+          "value": "number"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 30,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "TextInput",
+      "persistentUuid": "cd53c70a-1bd8-4be7-8167-1f57a61d9c8d",
+      "width": 383,
+      "x": -10,
+      "y": 479,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "initialValue",
+          "value": "80"
+        },
+        {
+          "name": "placeholder",
+          "value": "Rounds"
+        }
+      ],
+      "initialVariables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "drawTimer"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "inputType",
+          "type": "string",
+          "value": "number"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "Text",
+      "persistentUuid": "636a1352-652f-46f8-bcc6-129e1b0b0112",
+      "width": 0,
+      "x": -16,
+      "y": 376,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "[size=15][b]Rounds"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "Text",
+      "persistentUuid": "91f5b5a4-12e5-4d4d-ab28-a6a1139c0c81",
+      "width": 0,
+      "x": -18,
+      "y": 451,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "[size=15][b]Draw time in seconds"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "Text",
+      "persistentUuid": "c2c65f5a-0146-4c93-9a1e-5ab794318a10",
+      "width": 0,
+      "x": 96,
+      "y": 254,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "[b]Invite your friends!"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "Text",
+      "persistentUuid": "77d7dda1-0f32-4141-8e56-eee392071711",
+      "width": 0,
+      "x": 107,
+      "y": 345,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "[b]Game Settings"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "Text",
+      "persistentUuid": "dae0f4d0-d13e-4f4e-9e51-1ca7ee48bd88",
+      "width": 0,
+      "x": -309,
+      "y": 254.64706420898438,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": "[b]Players (1/8)"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "value": "PlayerCount"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "name": "NewSprite",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "name": "TextInput",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "inputType",
+          "type": "string",
+          "value": "text"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 20,
+        "inputType": "text",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 2,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "PlayerList",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "dasd",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "name": "ButtonText",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b][outline=black]CONNECT[/outline]",
+        "opacity": 255,
+        "fontSize": 18,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "NewSprite2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\icon\\logo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bottomMargin": 12,
+      "height": 64,
+      "leftMargin": 12,
+      "name": "Button",
+      "rightMargin": 12,
+      "tags": "",
+      "texture": "assets\\ui\\button.png",
+      "tiled": true,
+      "topMargin": 12,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 64,
+      "variables": [
+        {
+          "name": "type",
+          "type": "string",
+          "value": "null"
+        },
+        {
+          "name": "msg",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Brightness",
+          "name": "Effect",
+          "doubleParameters": {
+            "brightness": 0.9
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": []
+    },
+    {
+      "name": "Text",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "msg",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Text",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets\\font\\arial.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "Debug",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    }
+  ],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Hello! Welcome to the magic inside Guess the Pixel!\n\nHere's a simple guide of what these groups are for:\n\nClient (Red)\n➥ Connection to broker - Connects to broker and ICE servers\n➥ Recieved events from Host - This is where the data that are recieved from the host are being handled like player data/list\n\nHost (Orange)\n➥ Send player data to other clients (self explanatory)\n➥ Game Settings - This is where settings such as Max Rounds and Drawing Time are handled\n\nUI (Lime)\n➥Player List - This is where the player list are created and updated\n➥ Button hover and press - Hovering and pressing are handled here. This also where u can start and join a game\n➥ Always running - This is where actions that are runned every frame like background parallex",
+      "comment2": ""
+    },
+    {
+      "colorB": 27,
+      "colorG": 2,
+      "colorR": 208,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Client",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Sets your player name depending on what you put in the Text Input",
+          "comment2": ""
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "TextInput",
+                "type",
+                "=",
+                "\"playerName\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "playername",
+                "=",
+                "TextInput.Text()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "playername",
+                "=",
+                "TextInput.Text()"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Makes a random player name at the beginning",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextInput::TextInputObject::SetText"
+                  },
+                  "parameters": [
+                    "TextInput",
+                    "=",
+                    "\"Player\" + ToString(Random(100))"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "colorB": 188,
+          "colorG": 180,
+          "colorR": 252,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Connection to broker",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::UseOwnICEServer"
+                  },
+                  "parameters": [
+                    "\"stun:openrelay.metered.ca:80\"",
+                    "\"\"",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::UseOwnICEServer"
+                  },
+                  "parameters": [
+                    "\"turn:openrelay.metered.ca:80\"",
+                    "\"openrelayproject\"",
+                    "\"openrelayproject\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::UseOwnICEServer"
+                  },
+                  "parameters": [
+                    "\"turn:openrelay.metered.ca:443\"",
+                    "\"openrelayproject\"",
+                    "\"openrelayproject\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::UseOwnICEServer"
+                  },
+                  "parameters": [
+                    "\"turn:openrelay.metered.ca:443?transport=tcp\"",
+                    "\"openrelayproject\"",
+                    "\"openrelayproject\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::UseOwnICEServer"
+                  },
+                  "parameters": [
+                    "\"turn:openrelay.metered.ca:80?transport=tcp\"",
+                    "\"openrelayproject\"",
+                    "\"openrelayproject\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::UseOwnICEServer"
+                  },
+                  "parameters": [
+                    "\"turns:openrelay.metered.ca:443\"",
+                    "\"openrelayproject\"",
+                    "\"openrelayproject\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::UseOwnBroker"
+                  },
+                  "parameters": [
+                    "\"rinexus-multiplayer-peer.herokuapp.com\"",
+                    "443",
+                    "\"/\"",
+                    "",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Text",
+                    "=",
+                    "Text.VariableString(msg)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextInput::TextInputObject::SetInputType"
+                  },
+                  "parameters": [
+                    "TextInput",
+                    "=",
+                    "TextInput.VariableString(inputType)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::IsReady"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "TextInput",
+                    "type",
+                    "=",
+                    "\"myID\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextInput::TextInputObject::SetText"
+                  },
+                  "parameters": [
+                    "TextInput",
+                    "=",
+                    "P2P::GetID()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "myID",
+                    "=",
+                    "P2P::GetID()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "myID",
+                    "=",
+                    "P2P::GetID()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 188,
+          "colorG": 180,
+          "colorR": 252,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Recieved events from Host",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::OnEvent"
+                  },
+                  "parameters": [
+                    "\"sendOthersTheID\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "JSONToVariableStructure"
+                  },
+                  "parameters": [
+                    "P2P::GetEventData(\"sendOthersTheID\")",
+                    "PlayerList"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "updatePlayerList",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::OnEvent"
+                  },
+                  "parameters": [
+                    "\"sendToGame\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "tempPlayerList",
+                    "=",
+                    "ToJSON(PlayerList)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Game\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::OnEvent"
+                  },
+                  "parameters": [
+                    "\"GimmeData\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "TextInput",
+                    "type",
+                    "=",
+                    "\"connectID\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "GimmeDataDone",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Lobby\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Main\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::SendToOne"
+                  },
+                  "parameters": [
+                    "VariableString(connectID)",
+                    "\"sendPeerID\"",
+                    "VariableString(playername)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "GimmeDataDone",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "isHost",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "TextInput"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "TextInput",
+                                "type",
+                                "=",
+                                "\"rounds\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "TextInput",
+                                "type",
+                                "=",
+                                "\"drawTimer\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextInput::TextInputObject::SetReadOnly"
+                          },
+                          "parameters": [
+                            "TextInput",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "TextInput",
+                            "type",
+                            "=",
+                            "\"myID\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextInput::TextInputObject::SetText"
+                          },
+                          "parameters": [
+                            "TextInput",
+                            "=",
+                            "VariableString(connectID)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 35,
+      "colorG": 166,
+      "colorR": 245,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Host",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "colorB": 146,
+          "colorG": 212,
+          "colorR": 252,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Send player data to other clients",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::OnEvent"
+                  },
+                  "parameters": [
+                    "\"sendPeerID\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "PlayerList[P2P::GetEventSender(\"sendPeerID\")]",
+                    "=",
+                    "P2P::GetEventData(\"sendPeerID\")"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "updatePlayerList",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "insertMyID",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "PlayerList[VariableString(myID)]",
+                        "=",
+                        "VariableString(playername)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "insertMyID",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::SendToAll"
+                      },
+                      "parameters": [
+                        "\"sendOthersTheID\"",
+                        "ToJSON(PlayerList)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "isHost",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::SendToAll"
+                      },
+                      "parameters": [
+                        "\"updateGameSettings\"",
+                        "GlobalVarToJSON(GameSettings)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::OnConnection"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::SendToAll"
+                  },
+                  "parameters": [
+                    "\"GimmeData\"",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "isConnected",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 146,
+          "colorG": 212,
+          "colorR": 252,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Game Settings",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "isHost",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "TextInput",
+                        "type",
+                        "=",
+                        "\"rounds\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "GameSettings.Round",
+                        "!=",
+                        "ToNumber(TextInput.Text())"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "GameSettings.Round",
+                        "=",
+                        "ToNumber(TextInput.Text())"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::SendToAll"
+                      },
+                      "parameters": [
+                        "\"updateGameSettings\"",
+                        "GlobalVarToJSON(GameSettings)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "TextInput",
+                        "type",
+                        "=",
+                        "\"drawTimer\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "GameSettings.DrawTimer",
+                        "!=",
+                        "ToNumber(TextInput.Text())"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "GameSettings.DrawTimer",
+                        "=",
+                        "ToNumber(TextInput.Text())"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::SendToAll"
+                      },
+                      "parameters": [
+                        "\"updateGameSettings\"",
+                        "GlobalVarToJSON(GameSettings)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::OnEvent"
+                  },
+                  "parameters": [
+                    "\"updateGameSettings\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "JSONToGlobalVariableStructure"
+                  },
+                  "parameters": [
+                    "P2P::GetEventData(\"updateGameSettings\")",
+                    "GameSettings"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "TextInput",
+                        "type",
+                        "=",
+                        "\"drawTimer\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "TextInput",
+                        "=",
+                        "GlobalVariableString(GameSettings.DrawTimer)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "TextInput",
+                        "type",
+                        "=",
+                        "\"rounds\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "TextInput",
+                        "=",
+                        "GlobalVariableString(GameSettings.Round)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 33,
+      "colorG": 211,
+      "colorR": 126,
+      "creationTime": 0,
+      "folded": true,
+      "name": "UI",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Button",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "ButtonText",
+                    "Button.CenterX() - ButtonText.Width()",
+                    "Button.Y()",
+                    "Button.Layer()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "ButtonText",
+                    "=",
+                    "Button.VariableString(msg)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "ButtonText",
+                    "=",
+                    "Button.ZOrder()+1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "ButtonText",
+                    "=",
+                    "Button.CenterX() - ButtonText.Width()/2",
+                    "=",
+                    "Button.CenterY() - ButtonText.Height()/2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "ui_background",
+                    "anchor",
+                    "=",
+                    "\"null\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "ui_background",
+                    "Anchor",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "TextInput",
+                    "readOnly",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextInput::TextInputObject::SetReadOnly"
+                  },
+                  "parameters": [
+                    "TextInput",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "colorB": 147,
+          "colorG": 252,
+          "colorR": 202,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Player List",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "updatePlayerList",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "updatePlayerList",
+                    "False"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "y_offset",
+                    "=",
+                    "40"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PlayerList",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "PlayerList",
+                  "valueIteratorVariableName": "name",
+                  "keyIteratorVariableName": "peerID",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "ui_background",
+                        "type",
+                        "=",
+                        "\"playerlist\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "Text",
+                        "PlayerList",
+                        "ui_background.X() + 10",
+                        "ui_background.Y() + Variable(y_offset)",
+                        "\"Lobby\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "PlayerList",
+                        "=",
+                        "VariableString(name)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "y_offset",
+                        "+",
+                        "30"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::Connect"
+                      },
+                      "parameters": [
+                        "VariableString(peerID)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Text",
+                        "type",
+                        "=",
+                        "\"PlayerCount\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "Text",
+                        "=",
+                        "\"[b]Players (\" + ToString(SceneInstancesCount(PlayerList)) + \"/8)\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 147,
+          "colorG": 252,
+          "colorR": 202,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Button hover and press",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Button",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "EnableEffect"
+                  },
+                  "parameters": [
+                    "Button",
+                    "\"Effect\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "Button",
+                        "Button.Layer()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Button",
+                            "type",
+                            "=",
+                            "\"privateroom\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetGlobalVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "isHost",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ShowLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Lobby\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Main\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Starst the game and send other clients to the game scene",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Button",
+                            "type",
+                            "=",
+                            "\"start\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "GlobalVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "isHost",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "PlayerList",
+                            "PlayerList",
+                            ">=",
+                            "2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "P2P::SendToAll"
+                          },
+                          "parameters": [
+                            "\"sendToGame\"",
+                            "\"\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarGlobalTxt"
+                          },
+                          "parameters": [
+                            "tempPlayerList",
+                            "=",
+                            "ToJSON(PlayerList)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Game\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Join room",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Button",
+                            "type",
+                            "=",
+                            "\"join\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "TextInput",
+                            "type",
+                            "=",
+                            "\"connectID\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "P2P::Connect"
+                          },
+                          "parameters": [
+                            "TextInput.Text()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "connectID",
+                            "=",
+                            "TextInput.Text()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Button",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "Button",
+                    "\"Effect\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "EnableEffect"
+                  },
+                  "parameters": [
+                    "Button",
+                    "\"Effect\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 147,
+          "colorG": 252,
+          "colorR": 202,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Always running",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "background",
+                    "+",
+                    "TimeDelta()*20"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::YOffset"
+                  },
+                  "parameters": [
+                    "background",
+                    "-",
+                    "TimeDelta()*40"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CameraX"
+                  },
+                  "parameters": [
+                    "",
+                    "!=",
+                    "0",
+                    "\"\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCameraX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "0",
+                    "\"\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCameraX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "0",
+                    "\"Main\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCameraX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "0",
+                    "\"Lobby\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 32,
+      "ambientLightColorG": 0,
+      "ambientLightColorR": 0,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": -2147483632,
+      "ambientLightColorG": 6037952,
+      "ambientLightColorR": 8806560,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Lobby",
+      "visibility": false,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": -2147483632,
+      "ambientLightColorG": 6037952,
+      "ambientLightColorR": 8806560,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Main",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": []
+}
