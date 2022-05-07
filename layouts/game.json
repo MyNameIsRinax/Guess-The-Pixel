@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6500000000000059,
+    "zoomFactor": 0.29000000000000575,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1568,7 +1568,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2484,6 +2483,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2546,7 +2546,42 @@
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "icon",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "TimerText",
+                    "=",
+                    "icon.CenterX() - TimerText.Width()/2",
+                    "=",
+                    "icon.CenterY() - TimerText.Height()/2 + 5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "colorB": 255,
@@ -4044,7 +4079,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "WIP: Game Events > Timer",
+          "comment": "Game Events > Timer",
           "comment2": ""
         },
         {

@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2300000000000054,
+    "zoomFactor": 0.9500000000000057,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -557,6 +557,22 @@
           "value": "PlayerCount"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lobby",
+      "locked": false,
+      "name": "PlayerList",
+      "persistentUuid": "36f41ff7-2c5b-4886-a366-da2cc77cc332",
+      "width": 0,
+      "x": -395,
+      "y": 289,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -620,7 +636,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "dasd",
+      "string": "",
       "font": "",
       "characterSize": 20,
       "color": {
@@ -2077,23 +2093,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "y_offset",
-                    "=",
-                    "40"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Delete"
+                    "value": "TextObject::String"
                   },
                   "parameters": [
                     "PlayerList",
-                    ""
+                    "=",
+                    "\"\""
                   ],
                   "subInstructions": []
                 }
@@ -2123,38 +2128,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "Text",
-                        "PlayerList",
-                        "ui_background.X() + 10",
-                        "ui_background.Y() + Variable(y_offset)",
-                        "\"Lobby\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "TextObject::String"
                       },
                       "parameters": [
                         "PlayerList",
-                        "=",
-                        "VariableString(name)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "y_offset",
                         "+",
-                        "30"
+                        "VariableString(name) + NewLine()"
                       ],
                       "subInstructions": []
                     },
@@ -2197,7 +2176,7 @@
                       "parameters": [
                         "Text",
                         "=",
-                        "\"[b]Players (\" + ToString(SceneInstancesCount(PlayerList)) + \"/8)\""
+                        "\"[b]Players (\" + ToString(VariableChildCount(PlayerList)) + \"/8)\""
                       ],
                       "subInstructions": []
                     }
@@ -2252,7 +2231,6 @@
               ],
               "events": [
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -2385,13 +2363,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SceneInstancesCount"
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
                           },
                           "parameters": [
-                            "PlayerList",
-                            "PlayerList",
-                            ">=",
-                            "2"
+                            "VariableChildCount(PlayerList)",
+                            ">",
+                            "1"
                           ],
                           "subInstructions": []
                         }
