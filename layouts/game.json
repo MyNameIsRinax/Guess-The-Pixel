@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.45000000000000584,
+    "zoomFactor": 0.31000000000000605,
     "windowMask": false
   },
   "objectsGroups": [
@@ -255,22 +255,6 @@
       "x": -573.2835083007812,
       "y": 39,
       "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Debug",
-      "persistentUuid": "ca5a35af-7a58-487d-aaab-ab158014806a",
-      "width": 0,
-      "x": 504,
-      "y": 789,
-      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3375,11 +3359,11 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ResetTimer"
+                                "value": "Timer::startTimer"
                               },
                               "parameters": [
                                 "",
-                                "\"RoundTimer\""
+                                ""
                               ],
                               "subInstructions": []
                             },
@@ -3427,7 +3411,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3549,24 +3532,23 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CompareTimer"
+                    "value": "AnimationName"
                   },
                   "parameters": [
-                    "",
-                    "\"RoundTimer\"",
-                    "<=",
-                    "GlobalVariable(GameSettings.DrawTimer)"
+                    "icon",
+                    "\"timer\""
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "AnimationName"
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "icon",
-                    "\"timer\""
+                    "Timer::Time()",
+                    "<=",
+                    "GlobalVariable(GameSettings.DrawTimer)"
                   ],
                   "subInstructions": []
                 }
@@ -3580,7 +3562,7 @@
                   "parameters": [
                     "TimerText",
                     "=",
-                    "ToString(round(GlobalVariable(GameSettings.DrawTimer) - TimerElapsedTime(\"RoundTimer\")))"
+                    "ToString(GlobalVariable(GameSettings.DrawTimer) - (Timer::Time()))"
                   ],
                   "subInstructions": []
                 },
@@ -3599,51 +3581,51 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"UpdateTimer\"",
-                    ">=",
-                    "6"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"UpdateTimer\"",
+                        ">=",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"UpdateTimer\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::SendToAll"
+                      },
+                      "parameters": [
+                        "\"updateTimer\"",
+                        "ToJSON(Time)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"UpdateTimer\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "P2P::SendToAll"
-                  },
-                  "parameters": [
-                    "\"updateTimer\"",
-                    "ToString(TimerElapsedTime(\"RoundTimer\"))"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -4555,22 +4537,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ResetTimer"
+                    "value": "Timer::startTimer"
                   },
                   "parameters": [
                     "",
-                    "\"RoundTimer\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"UpdateTimer\""
+                    ""
                   ],
                   "subInstructions": []
                 },
@@ -4636,7 +4607,7 @@
               "comment2": ""
             },
             {
-              "disabled": true,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4646,26 +4617,69 @@
                   },
                   "parameters": [
                     "\"updateTimer\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"\"",
-                    "",
-                    ""
+                    "yes"
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": []
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "JSONToVariableStructure"
+                  },
+                  "parameters": [
+                    "P2P::GetEventData(\"updateTimer\")",
+                    "TempTime"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "Time.timer",
+                        ">",
+                        "Variable(TempTime.timer)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "JSONToVariableStructure"
+                      },
+                      "parameters": [
+                        "P2P::GetEventData(\"updateTimer\")",
+                        "Time"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Timer synced\"",
+                        "\"info\"",
+                        "\"Events\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ],
           "parameters": []
