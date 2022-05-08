@@ -1174,6 +1174,18 @@
                     "True"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "VariableString(PlayerList[P2P::GetLastDisconnectedPeer()]) + \" has left the game\"",
+                    "\"info\"",
+                    "\"Events\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -1502,7 +1514,6 @@
           "colorG": 212,
           "colorR": 252,
           "creationTime": 0,
-          "folded": true,
           "name": "Send player data to other clients",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1673,6 +1684,18 @@
                   "parameters": [
                     "isConnected",
                     "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "VariableString(PlayerList[P2P::GetLastConnectedPeer()]) + \" has joined the game\"",
+                    "\"info\"",
+                    "\"Events\""
                   ],
                   "subInstructions": []
                 }
@@ -2178,19 +2201,75 @@
                         "VariableString(name) + NewLine()"
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "P2P::Connect"
-                      },
-                      "parameters": [
-                        "VariableString(peerID)"
-                      ],
-                      "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "So it doesn't connect to an already connected client (also not to connect yourself)",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Connected[VariableString(peerID)]",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "peerID",
+                            "!=",
+                            "GlobalVariableString(myID)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "P2P::Connect"
+                          },
+                          "parameters": [
+                            "VariableString(peerID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Connected[VariableString(peerID)]",
+                            "True"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",

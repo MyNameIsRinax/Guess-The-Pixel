@@ -1247,6 +1247,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1428,18 +1429,6 @@
                       "parameters": [
                         "pixel",
                         "VariableString(SelectedColor)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "pixel",
-                        "hasCreated",
-                        "True"
                       ],
                       "subInstructions": []
                     },
@@ -1739,6 +1728,36 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "JSONToVariableStructure"
+                  },
+                  "parameters": [
+                    "GlobalVariableString(tempPlayerList)",
+                    "PlayerList"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
@@ -1757,16 +1776,6 @@
                   "parameters": [
                     "updatePlayerList",
                     "False"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VariableClearChildren"
-                  },
-                  "parameters": [
-                    "PlayerList"
                   ],
                   "subInstructions": []
                 },
@@ -1801,28 +1810,6 @@
                     "y_offset",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "JSONToVariableStructure"
-                  },
-                  "parameters": [
-                    "GlobalVariableString(tempPlayerList)",
-                    "PlayerList"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VariableRemoveChild"
-                  },
-                  "parameters": [
-                    "PlayerList",
-                    "VariableString(LastDisconnectedID)"
                   ],
                   "subInstructions": []
                 }
@@ -4057,6 +4044,20 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Leave message",
+              "comment2": ""
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4072,23 +4073,36 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarSceneTxt"
+                    "value": "BBText::SetBBText"
                   },
                   "parameters": [
-                    "LastDisconnectedID",
-                    "=",
-                    "P2P::GetLastDisconnectedPeer()"
+                    "ChatText",
+                    "+",
+                    "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine() + \"[color=red]\" + VariableString(PlayerList[P2P::GetLastDisconnectedPeer()]) + \" has left the game\""
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "SetSceneVariableAsBoolean"
+                    "value": "MettreY"
                   },
                   "parameters": [
-                    "updatePlayerList",
-                    "True"
+                    "ChatText",
+                    "=",
+                    "ChatInput.Y() - ChatText.Height()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "VariableString(PlayerList[P2P::GetLastDisconnectedPeer()]) + \" has left the game\"",
+                    "\"info\"",
+                    "\"Events\""
                   ],
                   "subInstructions": []
                 }
@@ -4104,7 +4118,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Leave message",
+                  "comment": "Remove disconnected player from list",
                   "comment2": ""
                 },
                 {
@@ -4114,24 +4128,22 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "BBText::SetBBText"
+                        "value": "VariableRemoveChild"
                       },
                       "parameters": [
-                        "ChatText",
-                        "+",
-                        "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine() + \"[color=red]\" + VariableString(PlayerList[P2P::GetLastDisconnectedPeer()]) + \" has left the game\""
+                        "PlayerList",
+                        "P2P::GetLastDisconnectedPeer()"
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "MettreY"
+                        "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "ChatText",
-                        "=",
-                        "ChatInput.Y() - ChatText.Height()"
+                        "updatePlayerList",
+                        "True"
                       ],
                       "subInstructions": []
                     }
