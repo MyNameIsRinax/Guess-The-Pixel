@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4999999999999996,
+    "zoomFactor": 0.8399999999999999,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -57,6 +57,48 @@
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 30,
+      "layer": "",
+      "locked": false,
+      "name": "NewTextInput",
+      "persistentUuid": "ca5a753a-db39-44d3-b116-51939c7111b4",
+      "width": 119,
+      "x": 415,
+      "y": 388,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "placeholder",
+          "value": "Time"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 30,
+      "layer": "",
+      "locked": false,
+      "name": "NewTextInput2",
+      "persistentUuid": "fc07acac-6251-4efa-b886-3310ac59adc7",
+      "width": 137,
+      "x": 571,
+      "y": 388,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "placeholder",
+          "value": "Recieved time"
+        }
+      ],
       "initialVariables": []
     }
   ],
@@ -100,6 +142,52 @@
         "g": 0,
         "r": 0
       }
+    },
+    {
+      "name": "NewTextInput",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 20,
+        "inputType": "text",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "name": "NewTextInput2",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 20,
+        "inputType": "text",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
     }
   ],
   "events": [
@@ -115,7 +203,7 @@
           "parameters": [
             "debug",
             "=",
-            "ToString(Time(\"sec\")) + NewLine() + \"Timer: \" + VariableString(timer) + NewLine() + \"MinElapsed: \" + VariableString(minsElapsed)"
+            "ToString(Time(\"sec\")) + NewLine() + \"Timer: \" + VariableString(timer) + NewLine() + \"MinElapsed: \" + VariableString(minsElapsed) + NewLine() + \"bool: \" +VariableString(bool)"
           ],
           "subInstructions": []
         },
@@ -127,7 +215,7 @@
           "parameters": [
             "Timer",
             "=",
-            "ToString(60 - (Timer::Time()))"
+            "ToString(80 - (Timer::Time()))"
           ],
           "subInstructions": []
         }
@@ -205,6 +293,68 @@
           "parameters": [
             "",
             ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "ToNumber(NewTextInput.Text())",
+            ">",
+            "ToNumber(NewTextInput2.Text())"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "bool",
+            "True"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "ToNumber(NewTextInput.Text())",
+            "<",
+            "ToNumber(NewTextInput2.Text())"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "bool",
+            "False"
           ],
           "subInstructions": []
         }

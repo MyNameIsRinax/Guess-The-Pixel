@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3100000000000058,
+    "zoomFactor": 0.3700000000000059,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1514,7 +1514,6 @@
           "colorG": 212,
           "colorR": 252,
           "creationTime": 0,
-          "folded": true,
           "name": "Send player data to other clients",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",

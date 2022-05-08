@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.31000000000000605,
+    "zoomFactor": 0.250000000000006,
     "windowMask": false
   },
   "objectsGroups": [
@@ -2830,6 +2830,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3411,6 +3412,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3594,7 +3596,7 @@
                         "",
                         "\"UpdateTimer\"",
                         ">=",
-                        "3"
+                        "6"
                       ],
                       "subInstructions": []
                     }
@@ -3603,22 +3605,22 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ResetTimer"
+                        "value": "P2P::SendToAll"
                       },
                       "parameters": [
-                        "",
-                        "\"UpdateTimer\""
+                        "\"updateTimer\"",
+                        "ToJSON(Time)"
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "P2P::SendToAll"
+                        "value": "ResetTimer"
                       },
                       "parameters": [
-                        "\"updateTimer\"",
-                        "ToJSON(Time)"
+                        "",
+                        "\"UpdateTimer\""
                       ],
                       "subInstructions": []
                     }
@@ -4556,6 +4558,17 @@
                     "\"Events\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"UpdateTimer\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": [
@@ -4607,7 +4620,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4642,10 +4654,10 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "VarScene"
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
                       },
                       "parameters": [
-                        "Time.timer",
+                        "Timer::Time()",
                         ">",
                         "Variable(TempTime.timer)"
                       ],
@@ -4653,6 +4665,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VariableClearChildren"
+                      },
+                      "parameters": [
+                        "Time"
+                      ],
+                      "subInstructions": []
+                    },
                     {
                       "type": {
                         "inverted": false,
@@ -4671,6 +4693,38 @@
                       },
                       "parameters": [
                         "\"Timer synced\"",
+                        "\"info\"",
+                        "\"Events\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Timer::Time()",
+                        "<",
+                        "Variable(TempTime.timer)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Timer is already synced\"",
                         "\"info\"",
                         "\"Events\""
                       ],
