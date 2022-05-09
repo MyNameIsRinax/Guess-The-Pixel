@@ -337,7 +337,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/timer"
+      "referenceTo": "/eventsFunctionsExtensions/realtimetimer"
     }
   ],
   "externalLayouts": [],

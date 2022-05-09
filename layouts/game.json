@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.250000000000006,
+    "zoomFactor": 0.49000000000000626,
     "windowMask": false
   },
   "objectsGroups": [
@@ -513,6 +513,22 @@
       "x": 294,
       "y": 622,
       "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Debug",
+      "persistentUuid": "68c70196-95b6-4c70-8b4d-edad2b21187e",
+      "width": 0,
+      "x": 137,
+      "y": 607,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1194,6 +1210,26 @@
           ]
         }
       ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "events": [
@@ -1231,7 +1267,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2830,7 +2865,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3299,23 +3333,23 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ModVarSceneTxt"
+                                "value": "RealtimeTimer::startTimer"
                               },
                               "parameters": [
-                                "guessedWord",
-                                "=",
-                                "ChooseWordList.GetBBText()"
+                                "",
+                                ""
                               ],
                               "subInstructions": []
                             },
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "P2P::SendToAll"
+                                "value": "ModVarSceneTxt"
                               },
                               "parameters": [
-                                "\"send_GuessedWord\"",
-                                "VariableString(guessedWord)"
+                                "guessedWord",
+                                "=",
+                                "ChooseWordList.GetBBText()"
                               ],
                               "subInstructions": []
                             },
@@ -3360,11 +3394,11 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "Timer::startTimer"
+                                "value": "P2P::SendToAll"
                               },
                               "parameters": [
-                                "",
-                                ""
+                                "\"send_GuessedWord\"",
+                                "VariableString(guessedWord)"
                               ],
                               "subInstructions": []
                             },
@@ -3548,7 +3582,7 @@
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "Timer::Time()",
+                    "RealtimeTimer::ElapsedTime()",
                     "<=",
                     "GlobalVariable(GameSettings.DrawTimer)"
                   ],
@@ -3564,7 +3598,7 @@
                   "parameters": [
                     "TimerText",
                     "=",
-                    "ToString(GlobalVariable(GameSettings.DrawTimer) - (Timer::Time()))"
+                    "ToString(GlobalVariable(GameSettings.DrawTimer) - RealtimeTimer::ElapsedTime())"
                   ],
                   "subInstructions": []
                 },
@@ -3583,52 +3617,7 @@
                   "subInstructions": []
                 }
               ],
-              "events": [
-                {
-                  "disabled": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CompareTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"UpdateTimer\"",
-                        ">=",
-                        "6"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "P2P::SendToAll"
-                      },
-                      "parameters": [
-                        "\"updateTimer\"",
-                        "ToJSON(Time)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"UpdateTimer\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
+              "events": []
             }
           ],
           "parameters": []
@@ -3713,6 +3702,7 @@
               "events": []
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4471,7 +4461,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4487,6 +4476,17 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RealtimeTimer::startTimer"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -4533,17 +4533,6 @@
                     "0",
                     "\"linear\"",
                     "200",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Timer::startTimer"
-                  },
-                  "parameters": [
-                    "",
                     ""
                   ],
                   "subInstructions": []
@@ -4599,136 +4588,6 @@
                       "parameters": [
                         "ChooseWordList",
                         ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Game Events > Timer",
-              "comment2": ""
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "P2P::OnEvent"
-                  },
-                  "parameters": [
-                    "\"updateTimer\"",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "JSONToVariableStructure"
-                  },
-                  "parameters": [
-                    "P2P::GetEventData(\"updateTimer\")",
-                    "TempTime"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::CompareNumbers"
-                      },
-                      "parameters": [
-                        "Timer::Time()",
-                        ">",
-                        "Variable(TempTime.timer)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VariableClearChildren"
-                      },
-                      "parameters": [
-                        "Time"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "JSONToVariableStructure"
-                      },
-                      "parameters": [
-                        "P2P::GetEventData(\"updateTimer\")",
-                        "Time"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "DebuggerTools::ConsoleLog"
-                      },
-                      "parameters": [
-                        "\"Timer synced\"",
-                        "\"info\"",
-                        "\"Events\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::CompareNumbers"
-                      },
-                      "parameters": [
-                        "Timer::Time()",
-                        "<",
-                        "Variable(TempTime.timer)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "DebuggerTools::ConsoleLog"
-                      },
-                      "parameters": [
-                        "\"Timer is already synced\"",
-                        "\"info\"",
-                        "\"Events\""
                       ],
                       "subInstructions": []
                     }
@@ -4797,6 +4656,17 @@
       "isLightingLayer": false,
       "name": "Words",
       "visibility": false,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 100663296,
+      "ambientLightColorG": 6039792,
+      "ambientLightColorR": 9459344,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "debug",
+      "visibility": true,
       "cameras": [],
       "effects": []
     }

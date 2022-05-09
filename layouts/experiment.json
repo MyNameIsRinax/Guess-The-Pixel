@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8399999999999999,
+    "zoomFactor": 0.5599999999999996,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -36,7 +36,7 @@
       "name": "debug",
       "persistentUuid": "b49b0b35-35d0-42df-95d4-024f14c246e2",
       "width": 0,
-      "x": 276,
+      "x": 205,
       "y": 302,
       "zOrder": 1,
       "numberProperties": [],
@@ -188,6 +188,26 @@
         "readOnly": false,
         "disabled": false
       }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "events": [
@@ -203,7 +223,7 @@
           "parameters": [
             "debug",
             "=",
-            "ToString(Time(\"sec\")) + NewLine() + \"Timer: \" + VariableString(timer) + NewLine() + \"MinElapsed: \" + VariableString(minsElapsed) + NewLine() + \"bool: \" +VariableString(bool)"
+            "ToString(Time(\"sec\")) + NewLine() + \"Timer: \" + VariableString(Time.timer) + NewLine() + \"MinElapsed: \" + VariableString(Time.secsElapsed) + NewLine() + \"bool: \" +VariableString(bool) + NewLine() + NewLine() + ToString(Time(\"timestamp\"))"
           ],
           "subInstructions": []
         },
@@ -215,7 +235,7 @@
           "parameters": [
             "Timer",
             "=",
-            "ToString(80 - (Timer::Time()))"
+            "ToString(60 - RealtimeTimer::ElapsedTime())"
           ],
           "subInstructions": []
         }
@@ -249,7 +269,7 @@
         {
           "type": {
             "inverted": false,
-            "value": "Timer::startTimer"
+            "value": "RealtimeTimer::startTimer"
           },
           "parameters": [
             "",
@@ -288,7 +308,7 @@
         {
           "type": {
             "inverted": false,
-            "value": "Timer::startTimer"
+            "value": "RealtimeTimer::startTimer"
           },
           "parameters": [
             "",
