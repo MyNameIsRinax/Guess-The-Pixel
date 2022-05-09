@@ -2443,7 +2443,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2537,7 +2536,7 @@
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
-                    "hasGuessed",
+                    "hasGuessed[GlobalVariableString(myID)]",
                     "True"
                   ],
                   "subInstructions": []
@@ -2632,7 +2631,7 @@
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
-                    "hasGuessed",
+                    "hasGuessed[GlobalVariableString(myID)]",
                     "False"
                   ],
                   "subInstructions": []
@@ -2764,7 +2763,7 @@
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "hasGuessed",
+                        "hasGuessed[GlobalVariableString(myID)]",
                         "True"
                       ],
                       "subInstructions": []
@@ -3005,6 +3004,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VariableClearChildren"
+                      },
+                      "parameters": [
+                        "hasGuessed"
+                      ],
+                      "subInstructions": []
+                    },
                     {
                       "type": {
                         "inverted": false,
@@ -3753,7 +3762,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "When timer is out, results will come out",
+              "comment": "Conditions for the result to come out",
               "comment2": ""
             },
             {
@@ -3762,14 +3771,35 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::IsBBText"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "TimerText",
-                    "=",
-                    "\"0\""
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "VariableChildCount(hasGuessed)",
+                        "=",
+                        "VariableChildCount(PlayerList)-1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::IsBBText"
+                      },
+                      "parameters": [
+                        "TimerText",
+                        "=",
+                        "\"0\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 },
                 {
                   "type": {
@@ -3811,6 +3841,19 @@
                 }
               ],
               "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "The result screen",
+              "comment2": ""
             },
             {
               "folded": true,
@@ -4507,6 +4550,17 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "hasGuessed[P2P::GetEventData(\"wordGuessed\")]",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
