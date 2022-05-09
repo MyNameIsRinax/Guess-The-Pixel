@@ -516,22 +516,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Debug",
-      "persistentUuid": "68c70196-95b6-4c70-8b4d-edad2b21187e",
-      "width": 0,
-      "x": 137,
-      "y": 607,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
