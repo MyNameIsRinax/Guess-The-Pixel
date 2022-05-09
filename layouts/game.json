@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.49000000000000626,
+    "zoomFactor": 0.4500000000000061,
     "windowMask": false
   },
   "objectsGroups": [
@@ -2443,6 +2443,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2527,149 +2528,220 @@
               "comment2": ""
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::CompareStrings"
+                    "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
-                    "ToLowerCase(ChatInput.Text())",
-                    "!=",
-                    "VariableString(guessedWord)"
+                    "hasGuessed",
+                    "True"
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetBBText"
-                  },
-                  "parameters": [
-                    "ChatText",
-                    "+",
-                    "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "P2P::SendToAll"
-                  },
-                  "parameters": [
-                    "\"message\"",
-                    "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"Event (message) has been sent\"",
-                    "\"info\"",
-                    "\"Events\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::CompareStrings"
-                  },
-                  "parameters": [
-                    "ToLowerCase(ChatInput.Text())",
-                    "=",
-                    "VariableString(guessedWord)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetBBText"
-                  },
-                  "parameters": [
-                    "ChatText",
-                    "+",
-                    "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321][b]\"+ NewLine() + GlobalVariableString(playername) + \" guessed the word\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "P2P::SendToAll"
-                  },
-                  "parameters": [
-                    "\"message\"",
-                    "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321][b]\"+ NewLine() + GlobalVariableString(playername) + \" guessed the word\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "P2P::SendToAll"
-                  },
-                  "parameters": [
-                    "\"wordGuessed\"",
-                    "ToString(round(ToNumber(TimerText.GetBBText()) * 10))"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"Event (wordGuessed) has been sent\"",
-                    "\"info\"",
-                    "\"Events\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "ToLowerCase(ChatInput.Text())",
+                        "!=",
+                        "VariableString(guessedWord)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarSceneTxt"
+                        "value": "BBText::SetBBText"
                       },
                       "parameters": [
-                        "Result[Variable(index)].ID",
-                        "=",
-                        "GlobalVariableString(myID)"
+                        "ChatText",
+                        "+",
+                        "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarSceneTxt"
+                        "value": "P2P::SendToAll"
                       },
                       "parameters": [
-                        "Result[Variable(index)].score",
+                        "\"message\"",
+                        "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "ToLowerCase(ChatInput.Text())",
                         "=",
+                        "VariableString(guessedWord)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "ChatText",
+                        "+",
+                        "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321][b]\"+ NewLine() + \"You've already guessed the word\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "hasGuessed",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "ToLowerCase(ChatInput.Text())",
+                        "!=",
+                        "VariableString(guessedWord)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "ChatText",
+                        "+",
+                        "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::SendToAll"
+                      },
+                      "parameters": [
+                        "\"message\"",
+                        "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Event (message) has been sent\"",
+                        "\"info\"",
+                        "\"Events\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "ToLowerCase(ChatInput.Text())",
+                        "=",
+                        "VariableString(guessedWord)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "ChatText",
+                        "+",
+                        "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321][b]\"+ NewLine() + GlobalVariableString(playername) + \" guessed the word\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::SendToAll"
+                      },
+                      "parameters": [
+                        "\"message\"",
+                        "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321][b]\"+ NewLine() + GlobalVariableString(playername) + \" guessed the word\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "P2P::SendToAll"
+                      },
+                      "parameters": [
+                        "\"wordGuessed\"",
                         "ToString(round(ToNumber(TimerText.GetBBText()) * 10))"
                       ],
                       "subInstructions": []
@@ -2677,17 +2749,72 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarScene"
+                        "value": "DebuggerTools::ConsoleLog"
                       },
                       "parameters": [
-                        "index",
-                        "+",
-                        "1"
+                        "\"Event (wordGuessed) has been sent\"",
+                        "\"info\"",
+                        "\"Events\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "hasGuessed",
+                        "True"
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "Result[Variable(index)].ID",
+                            "=",
+                            "GlobalVariableString(myID)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "Result[Variable(index)].score",
+                            "=",
+                            "ToString(round(ToNumber(TimerText.GetBBText()) * 10))"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "index",
+                            "+",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ]
             },
