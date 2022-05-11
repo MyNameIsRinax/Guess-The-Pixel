@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5700000000000064,
+    "zoomFactor": 0.2500000000000063,
     "windowMask": false
   },
   "objectsGroups": [
@@ -2947,7 +2947,6 @@
       "colorG": 19,
       "colorR": 144,
       "creationTime": 0,
-      "folded": true,
       "name": "Game events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3001,6 +3000,16 @@
                 "Canvas",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "CanvasTool"
               ],
               "subInstructions": []
             }
@@ -3279,7 +3288,6 @@
           "colorG": 156,
           "colorR": 208,
           "creationTime": 0,
-          "folded": true,
           "name": "Pick a drawer and words",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3514,16 +3522,6 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Cache"
-                          },
-                          "parameters": [
-                            "CanvasTool"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "Create"
                           },
                           "parameters": [
@@ -3581,6 +3579,16 @@
                             "ChooseWordList",
                             "=",
                             "Canvas.ZOrder()+1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "CanvasTool"
                           ],
                           "subInstructions": []
                         }
