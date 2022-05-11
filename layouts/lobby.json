@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8500000000000015,
+    "zoomFactor": 0.5700000000000015,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -578,13 +578,13 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "locked": false,
       "name": "Version",
       "persistentUuid": "3f61154d-4b84-486e-981d-bcc0e31c70ad",
       "width": 0,
-      "x": -28,
-      "y": 671,
+      "x": 1203,
+      "y": 675,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -816,7 +816,17 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 2,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "v0.0.0",
       "font": "",
       "characterSize": 20,
@@ -2987,7 +2997,23 @@
       "visibility": true,
       "cameras": [],
       "effects": []
+    },
+    {
+      "ambientLightColorB": 117440512,
+      "ambientLightColorG": 6039792,
+      "ambientLightColorR": 9861752,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "UI",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    }
+  ]
 }

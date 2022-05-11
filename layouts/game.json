@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7100000000000064,
+    "zoomFactor": 0.5700000000000064,
     "windowMask": false
   },
   "objectsGroups": [
@@ -4142,6 +4142,17 @@
                     "\"linear\"",
                     "200",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "startTimer",
+                    "False"
                   ],
                   "subInstructions": []
                 },
