@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.049999999999999996,
+    "zoomFactor": 0.8500000000000015,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -91,7 +91,7 @@
       "persistentUuid": "feff000c-f12f-4bb2-b0a0-f5dc351e8d04",
       "width": 383,
       "x": -190,
-      "y": 527,
+      "y": 524,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [
@@ -202,7 +202,7 @@
       "persistentUuid": "1261ba4e-4a70-43ce-ae5d-92a42c8ae116",
       "width": 426,
       "x": -210,
-      "y": 350,
+      "y": 355,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -278,7 +278,7 @@
       "persistentUuid": "30dfef98-8173-4b1a-a933-740b9cae5f9a",
       "width": 426,
       "x": -210,
-      "y": 572,
+      "y": 574,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -305,7 +305,7 @@
       "persistentUuid": "fcaf44dc-af0e-4ec3-be0c-6acc73c9dc51",
       "width": 486,
       "x": -242,
-      "y": 455,
+      "y": 452,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -349,7 +349,7 @@
       "persistentUuid": "520fa995-d589-4ac6-91f3-89c17e27915c",
       "width": 523,
       "x": -174,
-      "y": 465,
+      "y": 462,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -573,6 +573,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Version",
+      "persistentUuid": "3f61154d-4b84-486e-981d-bcc0e31c70ad",
+      "width": 0,
+      "x": -28,
+      "y": 671,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -782,6 +798,26 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "Version",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "v0.0.0",
       "font": "",
       "characterSize": 20,
       "color": {
@@ -2104,7 +2140,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2118,7 +2153,20 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Version",
+                "=",
+                "\"v\" + CurrentGameVersion::ReturnCurrentGameVersion()"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::ForEach",
@@ -2448,6 +2496,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2480,6 +2529,7 @@
               ],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -2939,10 +2989,5 @@
       "effects": []
     }
   ],
-  "behaviorsSharedData": [
-    {
-      "name": "Pathfinding",
-      "type": "PathfindingBehavior::PathfindingBehavior"
-    }
-  ]
+  "behaviorsSharedData": []
 }

@@ -16,7 +16,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "Guess the Pixel",
     "description": "A multiplayer draw & guess game that is heavily inspired from skribbl.io",
     "author": "Rinexus Games",
@@ -315,6 +315,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/currentgameversion"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/uuid"
