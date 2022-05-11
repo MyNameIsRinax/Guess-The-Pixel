@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.27000000000000585,
+    "zoomFactor": 0.049999999999999996,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1492,6 +1492,133 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "This is for joining a game that has already started",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::OnEvent"
+                  },
+                  "parameters": [
+                    "\"GimmeData_Ingame\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "TextInput",
+                    "type",
+                    "=",
+                    "\"connectID\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "JSONToVariableStructure"
+                  },
+                  "parameters": [
+                    "P2P::GetEventData(\"GimmeData_Ingame\")",
+                    "GameStatus"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "tempGameStatus",
+                    "=",
+                    "P2P::GetEventData(\"GimmeData_Ingame\")"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "GameSettings.DrawTimer",
+                    "=",
+                    "Variable(GameStatus.DrawTimer)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "GameSettings.Round",
+                    "=",
+                    "Variable(GameStatus.MaxRound)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "isJoinedMidGame",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "P2P::SendToOne"
+                  },
+                  "parameters": [
+                    "VariableString(connectID)",
+                    "\"sendPeerID\"",
+                    "VariableString(playername)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Game\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -2224,7 +2351,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SceneVariableAsBoolean"
+                            "value": "GlobalVariableAsBoolean"
                           },
                           "parameters": [
                             "Connected[VariableString(peerID)]",
@@ -2259,7 +2386,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SetSceneVariableAsBoolean"
+                            "value": "SetGlobalVariableAsBoolean"
                           },
                           "parameters": [
                             "Connected[VariableString(peerID)]",
