@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2500000000000063,
+    "zoomFactor": 0.49000000000000615,
     "windowMask": false
   },
   "objectsGroups": [
@@ -36,6 +36,9 @@
         },
         {
           "name": "ListName"
+        },
+        {
+          "name": "ListTop"
         }
       ]
     },
@@ -797,7 +800,7 @@
       "content": {
         "text": "Test",
         "opacity": 255,
-        "fontSize": 20,
+        "fontSize": 16,
         "visible": true,
         "color": "0;0;0",
         "fontFamily": "Arial",
@@ -821,12 +824,30 @@
       "content": {
         "text": "Test",
         "opacity": 255,
-        "fontSize": 20,
+        "fontSize": 16,
         "visible": true,
         "color": "0;0;0",
         "fontFamily": "Arial",
         "align": "left",
         "wordWrap": true
+      }
+    },
+    {
+      "name": "ListTop",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "#1",
+        "opacity": 255,
+        "fontSize": 25,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": false
       }
     },
     {
@@ -1243,7 +1264,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Hello! Welcome to the magic inside Guess the Pixel!\n\nHere's a simple guide of what these groups are for:\n\nCanvas (Orange)\n➥ Draw - Draws pixels with the color selected to the canvas\n➥ Select Color - Selects the color from the palette object\n\nUI (Lime)\n➥Player List - This is where the player list are created with their scores\n➥Always running - This is where actions that are runned every frame like background parallex\n\nChat (Blue)\n➥Handles the sending of messages and guessing the words\n\nGame Events (Purple)\n➥Pick a drawer and words - This is where a player gets picked a drawer and sends the choosen word to the other clients\n➥Timer - This is where the timer or the drawing time change\n➥Results - When the drawing time is over, this will run and calculate the scores and add it to their total score\n\nP2P Handler (Red)\n➥ Disconnection - Removes the disconnected player from the player list and updates the player list (also sends a leave message)\n➥ Received data - This is where recieved P2P events are being taken care of",
+      "comment": "Hello! Welcome to the magic inside Guess the Pixel!\n\nHere's a simple guide of what these groups are for:\n\nCanvas (Orange)\n➥ Draw - Draws pixels with the color selected to the canvas\n➥ Select Color - Selects the color from the palette object\n\nUI (Lime)\n➥ Player List - This is where the player list are created with their scores\n➥ Top place number - Updates the top place number in the player list\n➥ Always running - This is where actions that are runned every frame like background parallex\n\nChat (Blue)\n➥ Handles the sending of messages and guessing the words\n\nGame Events (Purple)\n➥ Pick a drawer and words - This is where a player gets picked a drawer and sends the choosen word to the other clients\n➥ Timer - This is where the timer or the drawing time change\n➥ Results - When the drawing time is over, this will run and calculate the scores and add it to their total score\n\nP2P Handler (Red)\n➥ Disconnection - Removes the disconnected player from the player list and updates the player list (also sends a leave message)\n➥ Joining midgame - Whenever a client joins mid-game (the game already started) this will help sync the newly joined client to the current status of the game\n➥ Received data - This is where recieved P2P events are being taken care of",
       "comment2": ""
     },
     {
@@ -1989,8 +2010,8 @@
                       "parameters": [
                         "",
                         "ListName",
-                        "ui_background.X()+5",
-                        "ui_background.Y() +2",
+                        "ui_background.X()+40",
+                        "ui_background.Y() + 5",
                         ""
                       ],
                       "subInstructions": []
@@ -2040,7 +2061,7 @@
                       "parameters": [
                         "",
                         "ListScore",
-                        "ui_background.X()+5",
+                        "ui_background.X()+40",
                         "ui_background.CenterY() - 8",
                         ""
                       ],
@@ -2078,6 +2099,45 @@
                       },
                       "parameters": [
                         "ListScore",
+                        "+",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "ListTop",
+                        "ui_background.X()+5",
+                        "ui_background.CenterY() - 24",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "ListTop",
+                        "id",
+                        "=",
+                        "VariableString(peerID)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "ListTop",
                         "+",
                         "3"
                       ],
@@ -2209,6 +2269,153 @@
                         "ListName",
                         "+",
                         "\" (You)\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "updateTopPlace",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 161,
+          "colorG": 252,
+          "colorR": 209,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Top place number",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "updateTopPlace",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "updateTopPlace",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VariableClearChildren"
+                  },
+                  "parameters": [
+                    "Top"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "TopNo",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "Score",
+                  "valueIteratorVariableName": "value",
+                  "keyIteratorVariableName": "i",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Top[Variable(value)]",
+                        "=",
+                        "VariableString(i)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "Top",
+                  "valueIteratorVariableName": "id",
+                  "keyIteratorVariableName": "place",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "ListTop",
+                        "id",
+                        "=",
+                        "VariableString(id)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "ListTop",
+                        "=",
+                        "\"#\" + ToString(VariableChildCount(PlayerList) -Variable(TopNo))"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "TopNo",
+                        "+",
+                        "1"
                       ],
                       "subInstructions": []
                     }
@@ -4195,6 +4402,7 @@
               "comment2": ""
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4358,6 +4566,24 @@
                         "ListScore",
                         "=",
                         "\"Score: \" + VariableString(Score[VariableString(resultData.ID)])"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "updateTopPlace",
+                        "True"
                       ],
                       "subInstructions": []
                     }
@@ -5380,6 +5606,24 @@
                         "ListScore",
                         "=",
                         "\"Score: \" + VariableString(Score[ListScore.VariableString(id)])"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "updateTopPlace",
+                        "True"
                       ],
                       "subInstructions": []
                     }
