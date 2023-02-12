@@ -3,9 +3,6 @@
   "disableInputWhenNotFocused": true,
   "mangledName": "Game",
   "name": "Game",
-  "oglFOV": 90,
-  "oglZFar": 500,
-  "oglZNear": 1,
   "r": 63,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -115,7 +112,6 @@
       "customSize": true,
       "height": 474,
       "layer": "",
-      "locked": false,
       "name": "ui_background",
       "persistentUuid": "28f1435d-21ee-4d20-880c-36b9a88553bc",
       "width": 246,
@@ -131,7 +127,6 @@
       "customSize": false,
       "height": 83.9349594116211,
       "layer": "",
-      "locked": false,
       "name": "pallete",
       "persistentUuid": "cd60d6f7-5598-49a5-b258-bae78d8195a5",
       "width": 414.9593505859375,
@@ -147,7 +142,6 @@
       "customSize": true,
       "height": 474,
       "layer": "",
-      "locked": false,
       "name": "CanvasOutline",
       "persistentUuid": "f632c640-b8fa-4e53-8083-f94892db599c",
       "width": 714,
@@ -163,7 +157,6 @@
       "customSize": true,
       "height": 43,
       "layer": "",
-      "locked": false,
       "name": "SelectedPallete",
       "persistentUuid": "52667120-caa2-4dd6-b34d-5b0c3c8d948f",
       "width": 43,
@@ -179,7 +172,6 @@
       "customSize": true,
       "height": 66,
       "layer": "",
-      "locked": false,
       "name": "ui_background",
       "persistentUuid": "01a9581a-40d2-4453-ab11-06365b602037",
       "width": 1224,
@@ -206,7 +198,6 @@
       "customSize": true,
       "height": 18,
       "layer": "",
-      "locked": false,
       "name": "ChatInput",
       "persistentUuid": "b66deb50-894c-4206-9372-1c7c8dd63294",
       "width": 234,
@@ -222,7 +213,6 @@
       "customSize": true,
       "height": 41,
       "layer": "",
-      "locked": false,
       "name": "RoundText",
       "persistentUuid": "0356d493-0751-48be-9ff1-f84ac00e296d",
       "width": 162.1907196044922,
@@ -238,7 +228,6 @@
       "customSize": true,
       "height": 468,
       "layer": "",
-      "locked": false,
       "name": "Canvas",
       "persistentUuid": "df0f7cff-f6e5-433b-8800-6595b6ffb182",
       "width": 708,
@@ -254,7 +243,6 @@
       "customSize": true,
       "height": 18,
       "layer": "",
-      "locked": false,
       "name": "ChatText",
       "persistentUuid": "18c8daa7-d49e-468d-89a9-8fb4cdfdb06b",
       "width": 240,
@@ -270,7 +258,6 @@
       "customSize": true,
       "height": 45,
       "layer": "",
-      "locked": false,
       "name": "TimerText",
       "persistentUuid": "52660403-b2fa-4b8f-864f-a4618aa35c67",
       "width": 43.94845199584961,
@@ -286,7 +273,6 @@
       "customSize": false,
       "height": 30,
       "layer": "",
-      "locked": false,
       "name": "icon",
       "persistentUuid": "106c9d3d-e8fc-4162-af12-6537079b2d4c",
       "width": 30,
@@ -308,7 +294,6 @@
       "customSize": true,
       "height": 40,
       "layer": "",
-      "locked": false,
       "name": "GuessWordText",
       "persistentUuid": "8365445e-9df6-46b4-88cd-1affd46dbf1d",
       "width": 107.77835083007812,
@@ -324,7 +309,6 @@
       "customSize": false,
       "height": 0,
       "layer": "Result",
-      "locked": false,
       "name": "ResultText",
       "persistentUuid": "a199f681-34c8-472c-9981-4f5dc2378823",
       "width": 0,
@@ -340,7 +324,6 @@
       "customSize": false,
       "height": 0,
       "layer": "Result",
-      "locked": false,
       "name": "ResultName",
       "persistentUuid": "9be6aca9-180b-4921-9edc-be9a8866e78d",
       "width": 0,
@@ -356,7 +339,6 @@
       "customSize": false,
       "height": 0,
       "layer": "Result",
-      "locked": false,
       "name": "ResultScore",
       "persistentUuid": "cf45df61-7980-482a-a47d-edf5198b4954",
       "width": 0,
@@ -372,7 +354,6 @@
       "customSize": false,
       "height": 0,
       "layer": "Words",
-      "locked": false,
       "name": "ChooseWordList",
       "persistentUuid": "08a36831-f5d5-4797-a5d6-b8f80478a56c",
       "width": 0,
@@ -388,7 +369,6 @@
       "customSize": false,
       "height": 0,
       "layer": "Words",
-      "locked": false,
       "name": "ChooseWordList",
       "persistentUuid": "a7be87e7-dea2-407f-b054-db01f914e530",
       "width": 0,
@@ -410,7 +390,6 @@
       "customSize": false,
       "height": 0,
       "layer": "Words",
-      "locked": false,
       "name": "ChooseWordList",
       "persistentUuid": "f91ea983-f7be-4483-af15-5ee48e5af8da",
       "width": 0,
@@ -432,7 +411,6 @@
       "customSize": false,
       "height": 0,
       "layer": "Words",
-      "locked": false,
       "name": "ChooseWordList",
       "persistentUuid": "87b0fd39-be44-4947-a7a8-df58649404ef",
       "width": 0,
@@ -454,7 +432,6 @@
       "customSize": true,
       "height": 426,
       "layer": "",
-      "locked": false,
       "name": "ChatMask",
       "persistentUuid": "6693c4ee-61b5-4c13-9449-dd5060c1a0e7",
       "width": 234,
@@ -470,7 +447,6 @@
       "customSize": true,
       "height": 86.98245239257812,
       "layer": "",
-      "locked": false,
       "name": "icon",
       "persistentUuid": "9f76b01a-bf1e-4351-8f44-22605f9dfa68",
       "width": 222,
@@ -491,7 +467,6 @@
       "customSize": true,
       "height": 92,
       "layer": "",
-      "locked": false,
       "name": "icon",
       "persistentUuid": "28f985df-2491-4912-8466-da11ef4767b3",
       "width": 92.08247375488281,
@@ -512,7 +487,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "cursor",
       "persistentUuid": "bb8f2010-30cf-4a95-9de8-2ed91816713d",
       "width": 0,
@@ -528,7 +502,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "CanvasTools",
       "persistentUuid": "09660ab5-57fc-4e25-b942-34a1b1296582",
       "width": 0,
@@ -542,6 +515,7 @@
   ],
   "objects": [
     {
+      "assetStoreId": "",
       "name": "pixel",
       "tags": "",
       "type": "Sprite",
@@ -588,6 +562,7 @@
       ]
     },
     {
+      "assetStoreId": "",
       "name": "pallete",
       "tags": "",
       "type": "Sprite",
@@ -647,6 +622,7 @@
       ]
     },
     {
+      "assetStoreId": "",
       "bottomMargin": 12,
       "height": 32,
       "leftMargin": 12,
@@ -663,6 +639,7 @@
       "behaviors": []
     },
     {
+      "assetStoreId": "",
       "name": "Canvas",
       "tags": "",
       "type": "Sprite",
@@ -708,6 +685,7 @@
       ]
     },
     {
+      "assetStoreId": "",
       "name": "CanvasTools",
       "tags": "",
       "type": "Sprite",
@@ -748,6 +726,7 @@
       ]
     },
     {
+      "assetStoreId": "",
       "name": "SelectedPallete",
       "tags": "",
       "type": "Sprite",
@@ -788,6 +767,7 @@
       ]
     },
     {
+      "assetStoreId": "",
       "name": "ListScore",
       "tags": "",
       "type": "BBText::BBText",
@@ -812,6 +792,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ListName",
       "tags": "",
       "type": "BBText::BBText",
@@ -836,6 +817,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ListTop",
       "tags": "",
       "type": "BBText::BBText",
@@ -854,6 +836,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ChatInput",
       "tags": "",
       "type": "TextInput::TextInputObject",
@@ -882,6 +865,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ChatText",
       "tags": "",
       "type": "BBText::BBText",
@@ -900,6 +884,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ChatMask",
       "tags": "",
       "type": "Sprite",
@@ -940,6 +925,7 @@
       ]
     },
     {
+      "assetStoreId": "",
       "name": "RoundText",
       "tags": "",
       "type": "BBText::BBText",
@@ -958,6 +944,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "TimerText",
       "tags": "",
       "type": "BBText::BBText",
@@ -976,6 +963,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "GuessWordText",
       "tags": "",
       "type": "BBText::BBText",
@@ -994,6 +982,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "Debug",
@@ -1006,6 +995,7 @@
       "behaviors": [],
       "string": "Text",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -1014,6 +1004,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ResultText",
       "tags": "",
       "type": "BBText::BBText",
@@ -1032,6 +1023,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ResultScore",
       "tags": "",
       "type": "BBText::BBText",
@@ -1050,6 +1042,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ResultName",
       "tags": "",
       "type": "BBText::BBText",
@@ -1068,6 +1061,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "ChooseWordList",
       "tags": "",
       "type": "BBText::BBText",
@@ -1092,6 +1086,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "cursor",
       "tags": "",
       "type": "Sprite",
@@ -1132,6 +1127,7 @@
       ]
     },
     {
+      "assetStoreId": "",
       "name": "icon",
       "tags": "",
       "type": "Sprite",
@@ -1236,6 +1232,7 @@
       ]
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "NewText",
@@ -1248,6 +1245,7 @@
       "behaviors": [],
       "string": "Text",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -1285,26 +1283,22 @@
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarSceneTxt"
               },
               "parameters": [
                 "Player[Variable(GameStatus.pickedDrawer)].ID",
                 "=",
                 "GlobalVariableString(myID)"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "SceneVariableAsBoolean"
               },
               "parameters": [
                 "GameStatus.PickingPhase",
                 "False"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [],
@@ -1325,18 +1319,15 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "MouseButtonPressed"
                       },
                       "parameters": [
                         "",
                         "Left"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
@@ -1344,20 +1335,17 @@
                         "",
                         "no",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::IsBBText"
                       },
                       "parameters": [
                         "TimerText",
                         "!=",
                         "\"0\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [],
@@ -1367,14 +1355,12 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "BuiltinCommonInstructions::Or"
                           },
                           "parameters": [],
                           "subInstructions": [
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "BuiltinCommonInstructions::And"
                               },
                               "parameters": [],
@@ -1390,21 +1376,18 @@
                                     "yes",
                                     "",
                                     "yes"
-                                  ],
-                                  "subInstructions": []
+                                  ]
                                 }
                               ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "BuiltinCommonInstructions::And"
                               },
                               "parameters": [],
                               "subInstructions": [
                                 {
                                   "type": {
-                                    "inverted": false,
                                     "value": "CollisionNP"
                                   },
                                   "parameters": [
@@ -1413,12 +1396,10 @@
                                     "yes",
                                     "",
                                     "yes"
-                                  ],
-                                  "subInstructions": []
+                                  ]
                                 },
                                 {
                                   "type": {
-                                    "inverted": false,
                                     "value": "VarObjetTxt"
                                   },
                                   "parameters": [
@@ -1426,8 +1407,7 @@
                                     "color",
                                     "!=",
                                     "VariableString(SelectedColor)"
-                                  ],
-                                  "subInstructions": []
+                                  ]
                                 }
                               ]
                             }
@@ -1435,14 +1415,12 @@
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "BuiltinCommonInstructions::Not"
                           },
                           "parameters": [],
                           "subInstructions": [
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "VarObjet"
                               },
                               "parameters": [
@@ -1450,8 +1428,7 @@
                                 "unknown",
                                 "=",
                                 "1"
-                              ],
-                              "subInstructions": []
+                              ]
                             }
                           ]
                         }
@@ -1459,7 +1436,6 @@
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "Create"
                           },
                           "parameters": [
@@ -1468,23 +1444,19 @@
                             "MouseX(\"\",0)-mod(MouseX(\"\",0),6)",
                             "MouseY(\"\",0)-mod(MouseY(\"\",0),6)",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ChangeColor"
                           },
                           "parameters": [
                             "pixel",
                             "VariableString(SelectedColor)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarObjetTxt"
                           },
                           "parameters": [
@@ -1492,12 +1464,10 @@
                             "color",
                             "=",
                             "VariableString(SelectedColor)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarObjetTxt"
                           },
                           "parameters": [
@@ -1505,94 +1475,78 @@
                             "id",
                             "=",
                             "UUID::GenerateUUIDv4()"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ChangePlan"
                           },
                           "parameters": [
                             "pixel",
                             "=",
                             "Variable(zOrder)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarSceneTxt"
                           },
                           "parameters": [
                             "sendData.block.Position",
                             "=",
                             "ToString(pixel.X()) +\":\"+ ToString(pixel.Y())"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarSceneTxt"
                           },
                           "parameters": [
                             "sendData.block.Color",
                             "=",
                             "VariableString(SelectedColor)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarSceneTxt"
                           },
                           "parameters": [
                             "sendData.block.ZOrder",
                             "=",
                             "ToString(block.ZOrder())"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "zOrder",
                             "+",
                             "1"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "DebuggerTools::ConsoleLog"
                           },
                           "parameters": [
                             "\"Event (draw) has been sent\"",
                             "\"info\"",
                             "\"Events\""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "P2P::SendToAll"
                           },
                           "parameters": [
                             "\"drawCanvas\"",
                             "ToJSON(sendData)"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 }
@@ -1614,26 +1568,21 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "MouseButtonPressed"
                       },
                       "parameters": [
                         "",
                         "Left"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [],
-                      "subInstructions": []
+                      "parameters": []
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
@@ -1641,36 +1590,30 @@
                         "",
                         "",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ChangeColor"
                       },
                       "parameters": [
                         "SelectedPallete",
                         "ToString(ReadPixels::ReadPixelRed(MouseX(),MouseY())) + \";\" +ToString(ReadPixels::ReadPixelGreen(MouseX(),MouseY())) + \";\" +ToString(ReadPixels::ReadPixelBlue(MouseX(),MouseY()))"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
                         "SelectedColor",
                         "=",
                         "ToString(ReadPixels::ReadPixelRed(MouseX(),MouseY())) + \";\" +ToString(ReadPixels::ReadPixelGreen(MouseX(),MouseY())) + \";\" +ToString(ReadPixels::ReadPixelBlue(MouseX(),MouseY()))"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ],
               "parameters": []
@@ -1690,26 +1633,21 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "MouseButtonPressed"
                       },
                       "parameters": [
                         "",
                         "Left"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [],
-                      "subInstructions": []
+                      "parameters": []
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
@@ -1717,47 +1655,39 @@
                         "",
                         "",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Delete"
                       },
                       "parameters": [
                         "pixel",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToAll"
                       },
                       "parameters": [
                         "\"clearCanvas\"",
                         "\"\""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "DebuggerTools::ConsoleLog"
                       },
                       "parameters": [
                         "\"Event (drawCanvas) has been sent\"",
                         "\"info\"",
                         "\"Events\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ],
               "parameters": []
@@ -1792,90 +1722,75 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DepartScene"
                   },
                   "parameters": [
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "JSONToVariableStructure"
                   },
                   "parameters": [
                     "GlobalVariableString(tempPlayerList)",
                     "PlayerList"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updatePlayerList",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updatePlayerList",
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VariableClearChildren"
                   },
                   "parameters": [
                     "Player"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "playerNo",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "y_offset",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -1884,7 +1799,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjetTxt"
                       },
                       "parameters": [
@@ -1892,24 +1806,20 @@
                         "id",
                         "!=",
                         "\"null\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Delete"
                       },
                       "parameters": [
                         "PlayerListUI",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
@@ -1920,7 +1830,6 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Create"
                       },
                       "parameters": [
@@ -1929,12 +1838,10 @@
                         "-610",
                         "114 + Variable(y_offset)",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
@@ -1942,72 +1849,60 @@
                         "id",
                         "=",
                         "VariableString(peerID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
                         "ui_background",
                         "Anchor",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PanelSpriteObject::Height"
                       },
                       "parameters": [
                         "ui_background",
                         "=",
                         "65"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PanelSpriteObject::Width"
                       },
                       "parameters": [
                         "ui_background",
                         "=",
                         "228"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ChangePlan"
                       },
                       "parameters": [
                         "ui_background",
                         "=",
                         "2"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarScene"
                       },
                       "parameters": [
                         "y_offset",
                         "+",
                         "68"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Create"
                       },
                       "parameters": [
@@ -2016,12 +1911,10 @@
                         "ui_background.X()+40",
                         "ui_background.Y() + 5",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
@@ -2029,36 +1922,30 @@
                         "id",
                         "=",
                         "VariableString(peerID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ListName",
                         "=",
                         "\"[b]\" + VariableString(name)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ChangePlan"
                       },
                       "parameters": [
                         "ListName",
                         "+",
                         "3"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Create"
                       },
                       "parameters": [
@@ -2067,12 +1954,10 @@
                         "ui_background.X()+40",
                         "ui_background.CenterY() - 8",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
@@ -2080,36 +1965,30 @@
                         "id",
                         "=",
                         "VariableString(peerID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ListScore",
                         "=",
                         "\"Score: \" + VariableString(Score[VariableString(peerID)])"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ChangePlan"
                       },
                       "parameters": [
                         "ListScore",
                         "+",
                         "3"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Create"
                       },
                       "parameters": [
@@ -2118,12 +1997,10 @@
                         "ui_background.X()+5",
                         "ui_background.CenterY() - 24",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
@@ -2131,20 +2008,17 @@
                         "id",
                         "=",
                         "VariableString(peerID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ChangePlan"
                       },
                       "parameters": [
                         "ListTop",
                         "+",
                         "3"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
@@ -2154,94 +2028,78 @@
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "playerNo",
                             "+",
                             "1"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarSceneTxt"
                           },
                           "parameters": [
                             "Player[Variable(playerNo)].ID",
                             "=",
                             "VariableString(peerID)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarSceneTxt"
                           },
                           "parameters": [
                             "Player[Variable(playerNo)].Name",
                             "=",
                             "VariableString(name)"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "GlobalVariableAsBoolean"
                           },
                           "parameters": [
                             "Connected[VariableString(peerID)]",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarSceneTxt"
                           },
                           "parameters": [
                             "peerID",
                             "!=",
                             "GlobalVariableString(myID)"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "P2P::Connect"
                           },
                           "parameters": [
                             "VariableString(peerID)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "SetGlobalVariableAsBoolean"
                           },
                           "parameters": [
                             "Connected[VariableString(peerID)]",
                             "True"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 },
@@ -2250,7 +2108,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjetTxt"
                       },
                       "parameters": [
@@ -2258,36 +2115,30 @@
                         "id",
                         "=",
                         "GlobalVariableString(myID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ListName",
                         "+",
                         "\" (You)\""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
                         "updateTopPlace",
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }
@@ -2309,49 +2160,41 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updateTopPlace",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updateTopPlace",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VariableClearChildren"
                   },
                   "parameters": [
                     "Top"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "TopNo",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -2364,18 +2207,15 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
                         "Top[Variable(value)]",
                         "=",
                         "VariableString(i)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::ForEachChildVariable",
@@ -2385,7 +2225,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjetTxt"
                       },
                       "parameters": [
@@ -2393,37 +2232,31 @@
                         "id",
                         "=",
                         "VariableString(id)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ListTop",
                         "=",
                         "\"#\" + ToString(VariableChildCount(PlayerList) -Variable(TopNo))"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarScene"
                       },
                       "parameters": [
                         "TopNo",
                         "+",
                         "1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }
@@ -2446,31 +2279,26 @@
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "TiledSpriteObject::XOffset"
                   },
                   "parameters": [
                     "background",
                     "+",
                     "TimeDelta()*20"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "TiledSpriteObject::YOffset"
                   },
                   "parameters": [
                     "background",
                     "-",
                     "TimeDelta()*40"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SpriteMasking::Mask"
                   },
                   "parameters": [
@@ -2478,18 +2306,15 @@
                     "ChatText",
                     "ChatMask",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "CameraX"
                   },
                   "parameters": [
@@ -2498,14 +2323,12 @@
                     "0",
                     "\"\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetCameraX"
                   },
                   "parameters": [
@@ -2514,12 +2337,10 @@
                     "0",
                     "\"\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetCameraX"
                   },
                   "parameters": [
@@ -2528,12 +2349,10 @@
                     "0",
                     "\"Words\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetCameraX"
                   },
                   "parameters": [
@@ -2542,18 +2361,15 @@
                     "0",
                     "\"Result\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
@@ -2561,14 +2377,12 @@
                     "",
                     "no",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MettreXY"
                   },
                   "parameters": [
@@ -2577,11 +2391,9 @@
                     "MouseX(\"\",0)-mod(MouseX(\"\",0),6)",
                     "=",
                     "MouseY(\"\",0)-mod(MouseY(\"\",0),6)"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -2591,27 +2403,22 @@
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "IsFullScreen"
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ZoomCamera"
               },
               "parameters": [
@@ -2619,12 +2426,10 @@
                 "0.9",
                 "\"\"",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ZoomCamera"
               },
               "parameters": [
@@ -2632,12 +2437,10 @@
                 "0.9",
                 "\"Words\"",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ZoomCamera"
               },
               "parameters": [
@@ -2645,11 +2448,9 @@
                 "0.9",
                 "\"Results\"",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2661,22 +2462,18 @@
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ZoomCamera"
               },
               "parameters": [
@@ -2684,12 +2481,10 @@
                 "1",
                 "\"\"",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ZoomCamera"
               },
               "parameters": [
@@ -2697,12 +2492,10 @@
                 "1",
                 "\"Results\"",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ZoomCamera"
               },
               "parameters": [
@@ -2710,11 +2503,9 @@
                 "1",
                 "\"Words\"",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": []
@@ -2735,37 +2526,31 @@
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarSceneTxt"
               },
               "parameters": [
                 "Player[Variable(GameStatus.pickedDrawer)].ID",
                 "!=",
                 "GlobalVariableString(myID)"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Or"
               },
               "parameters": [],
               "subInstructions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "KeyPressed"
                   },
                   "parameters": [
                     "",
                     "Return"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "InputEssentials::InputEssentials::onKeyDown"
                   },
                   "parameters": [
@@ -2773,30 +2558,25 @@
                     "InputEssentials",
                     "Return",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::CompareNumbers"
               },
               "parameters": [
                 "StrLength(ChatInput.Text())",
                 ">=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [],
@@ -2819,14 +2599,12 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VariableChildExists"
                   },
                   "parameters": [
                     "hasGuessed",
                     "GlobalVariableString(myID)"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
@@ -2836,75 +2614,63 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::CompareStrings"
                       },
                       "parameters": [
                         "ToLowerCase(ChatInput.Text())",
                         "!=",
                         "VariableString(GameStatus.MysteryWord)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ChatText",
                         "+",
                         "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToAll"
                       },
                       "parameters": [
                         "\"message\"",
                         "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::CompareStrings"
                       },
                       "parameters": [
                         "ToLowerCase(ChatInput.Text())",
                         "=",
                         "VariableString(GameStatus.MysteryWord)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ChatText",
                         "+",
                         "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321][b]\"+ NewLine() + \"You've already guessed the word\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
@@ -2932,8 +2698,7 @@
                   "parameters": [
                     "hasGuessed",
                     "GlobalVariableString(myID)"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
@@ -2943,129 +2708,108 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::CompareStrings"
                       },
                       "parameters": [
                         "ToLowerCase(ChatInput.Text())",
                         "!=",
                         "VariableString(GameStatus.MysteryWord)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ChatText",
                         "+",
                         "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToAll"
                       },
                       "parameters": [
                         "\"message\"",
                         "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine()+GlobalVariableString(playername) + \": \" + ChatInput.Text()"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "DebuggerTools::ConsoleLog"
                       },
                       "parameters": [
                         "\"Event (message) has been sent\"",
                         "\"info\"",
                         "\"Events\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::CompareStrings"
                       },
                       "parameters": [
                         "ToLowerCase(ChatInput.Text())",
                         "=",
                         "VariableString(GameStatus.MysteryWord)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ChatText",
                         "+",
                         "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321][b]\"+ NewLine() + GlobalVariableString(playername) + \" guessed the word\""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToAll"
                       },
                       "parameters": [
                         "\"message\"",
                         "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color][color=#7ED321][b]\"+ NewLine() + GlobalVariableString(playername) + \" guessed the word\""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToAll"
                       },
                       "parameters": [
                         "\"wordGuessed\"",
                         "ToString(round(ToNumber(TimerText.GetBBText()) * 10))"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "DebuggerTools::ConsoleLog"
                       },
                       "parameters": [
                         "\"Event (wordGuessed) has been sent\"",
                         "\"info\"",
                         "\"Events\""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
                         "hasGuessed[GlobalVariableString(myID)]",
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
@@ -3075,42 +2819,35 @@
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "index",
                             "=",
                             "VariableChildCount(Result)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarSceneTxt"
                           },
                           "parameters": [
                             "Result[Variable(index)].ID",
                             "=",
                             "GlobalVariableString(myID)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarSceneTxt"
                           },
                           "parameters": [
                             "Result[Variable(index)].score",
                             "=",
                             "ToString(round(ToNumber(TimerText.GetBBText()) * 10))"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 }
@@ -3122,30 +2859,25 @@
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "TextInput::TextInputObject::SetText"
                   },
                   "parameters": [
                     "ChatInput",
                     "=",
                     "\"\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MettreY"
                   },
                   "parameters": [
                     "ChatText",
                     "=",
                     "ChatInput.Y() - ChatText.Height()"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ]
         }
@@ -3168,61 +2900,51 @@
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "DepartScene"
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "BBText::SetBBText"
               },
               "parameters": [
                 "RoundText",
                 "=",
                 "\"Round \" + VariableString(GameStatus.CurrentRound) + \" of \" + GlobalVariableString(GameSettings.Round)"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BBText::SetBBText"
               },
               "parameters": [
                 "TimerText",
                 "=",
                 "GlobalVariableString(GameSettings.DrawTimer)"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Opacity"
               },
               "parameters": [
                 "Canvas",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Cache"
               },
               "parameters": [
                 "CanvasTool"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "events": [
@@ -3231,20 +2953,17 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "AnimationName"
                   },
                   "parameters": [
                     "icon",
                     "\"timer\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MettreXY"
                   },
                   "parameters": [
@@ -3253,11 +2972,9 @@
                     "icon.CenterX() - TimerText.Width()/2",
                     "=",
                     "icon.CenterY() - TimerText.Height()/2 + 5"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -3277,42 +2994,35 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
                     "isJoinedMidGame",
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "GameStatus.PickingPhase",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "GameStatus.pickedDrawer",
                     "+",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "folded": true,
@@ -3320,74 +3030,62 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
                     "isJoinedMidGame",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "GuessWordText",
                     "=",
                     "\"\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "JSONToVariableStructure"
                   },
                   "parameters": [
                     "GlobalVariableString(tempGameStatus)",
                     "GameStatus"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "RealtimeTimer::startTimer"
                   },
                   "parameters": [
                     "",
                     "Variable(GameStatus.TimestampStarted)",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "RoundText",
                     "=",
                     "\"Round \" + VariableString(GameStatus.CurrentRound) + \" of \" + GlobalVariableString(GameSettings.Round)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::SendToAll"
                   },
                   "parameters": [
                     "\"syncGameData\"",
                     "\"\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -3396,47 +3094,39 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
                         "GameStatus.PickingPhase",
                         "="
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Cache"
                       },
                       "parameters": [
                         "CanvasTool"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
                         "updateGuessedWord",
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Wait"
                       },
                       "parameters": [
                         "0.2"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
@@ -3445,7 +3135,6 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarObjetTxt"
                           },
                           "parameters": [
@@ -3453,12 +3142,10 @@
                             "type",
                             "=",
                             "\"drawer\""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarObjetTxt"
                           },
                           "parameters": [
@@ -3466,14 +3153,12 @@
                             "id",
                             "=",
                             "VariableString(Player[Variable(GameStatus.pickedDrawer)].ID)"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "SetCenter"
                           },
                           "parameters": [
@@ -3482,11 +3167,9 @@
                             "ui_background.X() + ui_background.Width() - icon.Width() + 8",
                             "=",
                             "ui_background.CenterY() - 4"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 }
@@ -3510,14 +3193,12 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
                     "GameStatus.PickingPhase",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
@@ -3528,39 +3209,32 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [],
-                      "subInstructions": []
+                      "parameters": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VariableClearChildren"
                       },
                       "parameters": [
                         "hasGuessed"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "GuessWordText",
                         "=",
                         "\"\""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Tween::AddObjectOpacityTween"
                       },
                       "parameters": [
@@ -3571,29 +3245,24 @@
                         "\"linear\"",
                         "200",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Delete"
                       },
                       "parameters": [
                         "pixel",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Wait"
                       },
                       "parameters": [
                         "0.2"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
@@ -3615,63 +3284,53 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarScene"
                           },
                           "parameters": [
                             "GameStatus.pickedDrawer",
                             "=",
                             "Variable(playerNo)+1"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "GameStatus.pickedDrawer",
                             "=",
                             "1"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "GameStatus.CurrentRound",
                             "+",
                             "1"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "BBText::SetBBText"
                           },
                           "parameters": [
                             "RoundText",
                             "=",
                             "\"Round \" + VariableString(GameStatus.CurrentRound) + \" of \" + GlobalVariableString(GameSettings.Round)"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarObjetTxt"
                           },
                           "parameters": [
@@ -3679,12 +3338,10 @@
                             "type",
                             "=",
                             "\"drawer\""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarObjetTxt"
                           },
                           "parameters": [
@@ -3692,14 +3349,12 @@
                             "id",
                             "=",
                             "VariableString(Player[Variable(GameStatus.pickedDrawer)].ID)"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "SetCenter"
                           },
                           "parameters": [
@@ -3708,32 +3363,27 @@
                             "ui_background.X() + ui_background.Width() - icon.Width() + 8",
                             "=",
                             "ui_background.CenterY() - 4"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarGlobalTxt"
                           },
                           "parameters": [
                             "myID",
                             "!=",
                             "VariableString(Player[Variable(GameStatus.pickedDrawer)].ID)"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "Create"
                           },
                           "parameters": [
@@ -3742,36 +3392,30 @@
                             "Canvas.CenterX()",
                             "Canvas.CenterY()-20",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "BBText::SetBBText"
                           },
                           "parameters": [
                             "ChooseWordList",
                             "=",
                             "\"[b]\" + VariableString(Player[Variable(GameStatus.pickedDrawer)].Name) + \"[/b] is choosing a word\""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "MettreX"
                           },
                           "parameters": [
                             "ChooseWordList",
                             "=",
                             "Canvas.CenterX()-ChooseWordList.Width()/2"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarObjetTxt"
                           },
                           "parameters": [
@@ -3779,33 +3423,27 @@
                             "type",
                             "=",
                             "\"playerIsChoosing\""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ChangePlan"
                           },
                           "parameters": [
                             "ChooseWordList",
                             "=",
                             "Canvas.ZOrder()+1"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "Cache"
                           },
                           "parameters": [
                             "CanvasTool"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 },
@@ -3815,15 +3453,13 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarGlobalTxt"
                       },
                       "parameters": [
                         "myID",
                         "=",
                         "VariableString(Player[Variable(GameStatus.pickedDrawer)].ID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [],
@@ -3833,7 +3469,6 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarObjetTxt"
                           },
                           "parameters": [
@@ -3841,32 +3476,26 @@
                             "type",
                             "=",
                             "\"playerIsChoosing\""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "BuiltinCommonInstructions::Once"
                           },
-                          "parameters": [],
-                          "subInstructions": []
+                          "parameters": []
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "Delete"
                           },
                           "parameters": [
                             "ChooseWordList",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     },
                     {
                       "folded": true,
@@ -3874,7 +3503,6 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "VarObjetTxt"
                           },
                           "parameters": [
@@ -3882,8 +3510,7 @@
                             "type",
                             "=",
                             "\"word\""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [],
@@ -3893,76 +3520,62 @@
                           "conditions": [
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "BuiltinCommonInstructions::Once"
                               },
-                              "parameters": [],
-                              "subInstructions": []
+                              "parameters": []
                             }
                           ],
                           "actions": [
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "ShowLayer"
                               },
                               "parameters": [
                                 "",
                                 "\"Words\""
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "BBText::SetBBText"
                               },
                               "parameters": [
                                 "ChooseWordList",
                                 "=",
                                 "ToLowerCase(RandomWords::randomWord())"
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "Montre"
                               },
                               "parameters": [
                                 "CanvasTool",
                                 ""
-                              ],
-                              "subInstructions": []
+                              ]
                             }
-                          ],
-                          "events": []
+                          ]
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "MouseButtonReleased"
                               },
                               "parameters": [
                                 "",
                                 "Left"
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "BuiltinCommonInstructions::Once"
                               },
-                              "parameters": [],
-                              "subInstructions": []
+                              "parameters": []
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "SourisSurObjet"
                               },
                               "parameters": [
@@ -3970,49 +3583,41 @@
                                 "",
                                 "",
                                 ""
-                              ],
-                              "subInstructions": []
+                              ]
                             }
                           ],
                           "actions": [
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "RealtimeTimer::startTimer"
                               },
                               "parameters": [
                                 "",
                                 "Time(\"timestamp\")",
                                 ""
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "ModVarSceneTxt"
                               },
                               "parameters": [
                                 "GameStatus.MysteryWord",
                                 "=",
                                 "ChooseWordList.GetBBText()"
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "SetSceneVariableAsBoolean"
                               },
                               "parameters": [
                                 "updateGuessedWord",
                                 "True"
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "Tween::AddObjectOpacityTween"
                               },
                               "parameters": [
@@ -4023,67 +3628,55 @@
                                 "\"linear\"",
                                 "200",
                                 ""
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "SetSceneVariableAsBoolean"
                               },
                               "parameters": [
                                 "GameStatus.PickingPhase",
                                 "False"
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "P2P::SendToAll"
                               },
                               "parameters": [
                                 "\"send_GuessedWord\"",
                                 "VariableString(GameStatus.MysteryWord)"
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "ResetTimer"
                               },
                               "parameters": [
                                 "",
                                 "\"UpdateTimer\""
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "HideLayer"
                               },
                               "parameters": [
                                 "",
                                 "\"Words\""
-                              ],
-                              "subInstructions": []
+                              ]
                             },
                             {
                               "type": {
-                                "inverted": false,
                                 "value": "DebuggerTools::ConsoleLog"
                               },
                               "parameters": [
                                 "\"Event (send_GuessedWord) has been sent\"",
                                 "\"info\"",
                                 "\"Events\""
-                              ],
-                              "subInstructions": []
+                              ]
                             }
-                          ],
-                          "events": []
+                          ]
                         }
                       ]
                     }
@@ -4097,27 +3690,23 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updateGuessedWord",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updateGuessedWord",
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -4126,47 +3715,40 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarSceneTxt"
                       },
                       "parameters": [
                         "Player[Variable(GameStatus.pickedDrawer)].ID",
                         "=",
                         "GlobalVariableString(myID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "GuessWordText",
                         "=",
                         "\"[b][spacing=12]\" + VariableString(GameStatus.MysteryWord)+ \"[/spacing]\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarSceneTxt"
                       },
                       "parameters": [
                         "Player[Variable(GameStatus.pickedDrawer)].ID",
                         "!=",
                         "GlobalVariableString(myID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [],
@@ -4178,18 +3760,15 @@
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "BBText::SetBBText"
                           },
                           "parameters": [
                             "GuessWordText",
                             "+",
                             "\"[b][spacing=12]_[/spacing]\""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 }
@@ -4213,44 +3792,37 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "AnimationName"
                   },
                   "parameters": [
                     "icon",
                     "\"timer\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
                     "RealtimeTimer::ElapsedTime()",
                     "<=",
                     "GlobalVariable(GameSettings.DrawTimer)"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "TimerText",
                     "=",
                     "ToString(GlobalVariable(GameSettings.DrawTimer) - RealtimeTimer::ElapsedTime())"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MettreXY"
                   },
                   "parameters": [
@@ -4259,11 +3831,9 @@
                     "icon.CenterX() - TimerText.Width()/2",
                     "=",
                     "icon.CenterY() - TimerText.Height()/2 + 5"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -4296,62 +3866,52 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Or"
                   },
                   "parameters": [],
                   "subInstructions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::CompareNumbers"
                       },
                       "parameters": [
                         "VariableChildCount(hasGuessed)",
                         "=",
                         "VariableChildCount(PlayerList)-1"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::IsBBText"
                       },
                       "parameters": [
                         "TimerText",
                         "=",
                         "\"0\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ChangePlan"
                   },
                   "parameters": [
                     "Canvas",
                     "=",
                     "Variable(zOrder)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectOpacityTween"
                   },
                   "parameters": [
@@ -4362,34 +3922,28 @@
                     "\"linear\"",
                     "200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "startTimer",
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "GameStatus.pickedDrawer",
                     "+",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -4410,83 +3964,69 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::HasFinished"
                   },
                   "parameters": [
                     "Canvas",
                     "Tween",
                     "\"fadeIn-Result\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "ResultName",
                     "=",
                     "\"\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "ResultScore",
                     "=",
                     "\"\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "ResultText",
                     "=",
                     "\"[b]The word was: \" + VariableString(GameStatus.MysteryWord) + NewLine() + \"[size=15]Time is up!\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ShowLayer"
                   },
                   "parameters": [
                     "",
                     "\"Result\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ResetTimer"
                   },
                   "parameters": [
                     "",
                     "\"NextGame\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -4498,7 +4038,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjetTxt"
                       },
                       "parameters": [
@@ -4506,12 +4045,10 @@
                         "id",
                         "=",
                         "VariableString(resultData.ID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjetTxt"
                       },
                       "parameters": [
@@ -4519,61 +4056,51 @@
                         "id",
                         "=",
                         "VariableString(resultData.ID)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ResultName",
                         "+",
                         "ListName.GetBBText() + NewLine()"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ResultScore",
                         "+",
                         "\"[color=lime]+\" + VariableString(resultData.score) + NewLine()"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarScene"
                       },
                       "parameters": [
                         "Score[VariableString(resultData.ID)]",
                         "+",
                         "Variable(resultData.score)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ListScore",
                         "=",
                         "\"Score: \" + VariableString(Score[VariableString(resultData.ID)])"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -4581,17 +4108,14 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
                         "updateTopPlace",
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
@@ -4613,7 +4137,6 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "CompareTimer"
                   },
                   "parameters": [
@@ -4621,22 +4144,18 @@
                     "\"NextGame\"",
                     ">",
                     "4"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectOpacityTween"
                   },
                   "parameters": [
@@ -4647,71 +4166,58 @@
                     "\"linear\"",
                     "200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VariableClearChildren"
                   },
                   "parameters": [
                     "Result"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "HideLayer"
                   },
                   "parameters": [
                     "",
                     "\"Result\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::HasFinished"
                   },
                   "parameters": [
                     "Canvas",
                     "Tween",
                     "\"fadeOut-Result\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "GameStatus.PickingPhase",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -4758,49 +4264,41 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnDisconnection"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "ChatText",
                     "+",
                     "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine() + \"[color=red]\" + VariableString(PlayerList[P2P::GetLastDisconnectedPeer()]) + \" has left the game\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MettreY"
                   },
                   "parameters": [
                     "ChatText",
                     "=",
                     "ChatInput.Y() - ChatText.Height()"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "VariableString(PlayerList[P2P::GetLastDisconnectedPeer()]) + \" has left the game\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -4823,28 +4321,23 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VariableRemoveChild"
                       },
                       "parameters": [
                         "PlayerList",
                         "P2P::GetLastDisconnectedPeer()"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
                         "updatePlayerList",
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }
@@ -4879,83 +4372,68 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnConnection"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
                     "isHost",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "GameStatus.TimestampStarted",
                     "=",
                     "Variable(Time.started)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "GameStatus.MaxRound",
                     "=",
                     "GlobalVariable(GameSettings.Round)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "GameStatus.DrawTimer",
                     "=",
                     "GlobalVariable(GameSettings.DrawTimer)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::SendToOne"
                   },
                   "parameters": [
                     "P2P::GetLastConnectedPeer()",
                     "\"GimmeData_Ingame\"",
                     "ToJSON(GameStatus)"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -4975,88 +4453,73 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"sendPeerID\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
                     "PlayerList[P2P::GetEventSender(\"sendPeerID\")]",
                     "=",
                     "P2P::GetEventData(\"sendPeerID\")"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updatePlayerList",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::SendToAll"
                   },
                   "parameters": [
                     "\"sendOthersTheID\"",
                     "ToJSON(PlayerList)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "ChatText",
                     "+",
                     "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine() + \"[color=#fcb800]\" + VariableString(PlayerList[P2P::GetEventSender(\"sendPeerID\")]) + \" has joined the game\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::SendToAll"
                   },
                   "parameters": [
                     "\"message\"",
                     "\"[/b][/i][/size][/font][/spacing][/outline][/shadow][/color]\"+ NewLine() + \"[color=#fcb800]\" + VariableString(PlayerList[P2P::GetEventSender(\"sendPeerID\")]) + \" has joined the game\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MettreY"
                   },
                   "parameters": [
                     "ChatText",
                     "=",
                     "ChatInput.Y() - ChatText.Height()"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -5076,41 +4539,34 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"sendOthersTheID\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "JSONToVariableStructure"
                   },
                   "parameters": [
                     "P2P::GetEventData(\"sendOthersTheID\")",
                     "PlayerList"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updatePlayerList",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -5131,57 +4587,47 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
                     "isHost",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"syncGameData\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VariableClearChildren"
                   },
                   "parameters": [
                     "CanvasPayload"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "counter",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -5192,7 +4638,6 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -5200,20 +4645,17 @@
                         "SaveID",
                         "=",
                         "Variable(counter)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarScene"
                       },
                       "parameters": [
                         "counter",
                         "+",
                         "1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
@@ -5223,54 +4665,45 @@
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarSceneTxt"
                           },
                           "parameters": [
                             "CanvasPayload[pixel.Variable(SaveID)].color",
                             "=",
                             "pixel.VariableString(color)"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "CanvasPayload[pixel.Variable(SaveID)].X",
                             "=",
                             "pixel.X()"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "CanvasPayload[pixel.Variable(SaveID)].Y",
                             "=",
                             "pixel.Y()"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "CanvasPayload[pixel.Variable(SaveID)].Z",
                             "=",
                             "pixel.ZOrder()"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 },
@@ -5280,54 +4713,45 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToOne"
                       },
                       "parameters": [
                         "P2P::GetEventSender(\"syncGameData\")",
                         "\"receiveCanvasData\"",
                         "ToJSON(CanvasPayload)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToOne"
                       },
                       "parameters": [
                         "P2P::GetEventSender(\"syncGameData\")",
                         "\"receiveResultData\"",
                         "ToJSON(Result)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToOne"
                       },
                       "parameters": [
                         "P2P::GetEventSender(\"syncGameData\")",
                         "\"receiveScoreData\"",
                         "ToJSON(Score)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "P2P::SendToOne"
                       },
                       "parameters": [
                         "P2P::GetEventSender(\"syncGameData\")",
                         "\"receiveHasGuessedData\"",
                         "ToJSON(hasGuessed)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
@@ -5350,39 +4774,33 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"receiveCanvasData\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "JSONToVariableStructure"
                   },
                   "parameters": [
                     "P2P::GetEventData(\"receiveCanvasData\")",
                     "CanvasPayload"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (recieveCanvasData) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -5395,7 +4813,6 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Create"
                       },
                       "parameters": [
@@ -5404,35 +4821,29 @@
                         "Variable(pixel.X)",
                         "Variable(pixel.Y)",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ChangeColor"
                       },
                       "parameters": [
                         "pixel",
                         "VariableString(pixel.color)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ChangePlan"
                       },
                       "parameters": [
                         "pixel",
                         "=",
                         "Variable(pixel.Z)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
@@ -5440,23 +4851,19 @@
                         "color",
                         "=",
                         "VariableString(pixel.color)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarScene"
                       },
                       "parameters": [
                         "zOrder",
                         "+",
                         "1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
@@ -5465,84 +4872,70 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"receiveResultData\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "JSONToVariableStructure"
                   },
                   "parameters": [
                     "P2P::GetEventData(\"receiveResultData\")",
                     "Result"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (recieveResultData) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"receiveHasGuessedData\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "JSONToVariableStructure"
                   },
                   "parameters": [
                     "P2P::GetEventData(\"receiveHasGuessedData\")",
                     "hasGuessed"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (recieveHasGuessedData) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "folded": true,
@@ -5550,49 +4943,41 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"receiveScoreData\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "JSONToVariableStructure"
                   },
                   "parameters": [
                     "P2P::GetEventData(\"receiveScoreData\")",
                     "Score"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (recieveScoreData) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Wait"
                   },
                   "parameters": [
                     "0.1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -5603,18 +4988,15 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BBText::SetBBText"
                       },
                       "parameters": [
                         "ListScore",
                         "=",
                         "\"Score: \" + VariableString(Score[ListScore.VariableString(id)])"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -5622,17 +5004,14 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
                         "updateTopPlace",
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }
@@ -5680,31 +5059,26 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"drawCanvas\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "JSONToVariableStructure"
                   },
                   "parameters": [
                     "P2P::GetEventData(\"drawCanvas\")",
                     "recievedData"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Create"
                   },
                   "parameters": [
@@ -5713,47 +5087,39 @@
                     "ToNumber(SubStr(VariableString(recievedData.block.Position), 0, StrFindLast(VariableString(recievedData.block.Position), \":\")))",
                     "ToNumber(SubStr(VariableString(recievedData.block.Position), StrFindLast(VariableString(recievedData.block.Position), \":\") + 1, StrLength(VariableString(recievedData.block.Position))))",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ChangePlan"
                   },
                   "parameters": [
                     "pixel",
                     "=",
                     "Variable(zOrder)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "zOrder",
                     "+",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ChangeColor"
                   },
                   "parameters": [
                     "pixel",
                     "VariableString(recievedData.block.Color)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarObjetTxt"
                   },
                   "parameters": [
@@ -5761,23 +5127,19 @@
                     "color",
                     "=",
                     "VariableString(recievedData.block.Color)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (drawCanvas) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -5797,42 +5159,35 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"clearCanvas\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Delete"
                   },
                   "parameters": [
                     "pixel",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (clearCanvas) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -5852,133 +5207,111 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"message\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "ChatText",
                     "+",
                     "P2P::GetEventData(\"message\")"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MettreY"
                   },
                   "parameters": [
                     "ChatText",
                     "=",
                     "ChatInput.Y() - ChatText.Height()"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (message) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"wordGuessed\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "index",
                     "=",
                     "VariableChildCount(Result)"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "hasGuessed[P2P::GetEventSender(\"wordGuessed\")]",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
                     "Result[Variable(index)].score",
                     "=",
                     "P2P::GetEventData(\"wordGuessed\")"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
                     "Result[Variable(index)].ID",
                     "=",
                     "P2P::GetEventSender(\"wordGuessed\")"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (wordGuessed) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -5998,66 +5331,55 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "P2P::OnEvent"
                   },
                   "parameters": [
                     "\"send_GuessedWord\"",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "RealtimeTimer::startTimer"
                   },
                   "parameters": [
                     "",
                     "Time(\"timestamp\")",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarSceneTxt"
                   },
                   "parameters": [
                     "GameStatus.MysteryWord",
                     "=",
                     "P2P::GetEventData(\"send_GuessedWord\")"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "updateGuessedWord",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "GameStatus.PickingPhase",
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectOpacityTween"
                   },
                   "parameters": [
@@ -6068,31 +5390,26 @@
                     "\"linear\"",
                     "200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DebuggerTools::ConsoleLog"
                   },
                   "parameters": [
                     "\"Event (send_GuessedWord) has been recieved\"",
                     "\"info\"",
                     "\"Events\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ResetTimer"
                   },
                   "parameters": [
                     "",
                     "\"UpdateTimer\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
@@ -6101,7 +5418,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjetTxt"
                       },
                       "parameters": [
@@ -6109,24 +5425,20 @@
                         "type",
                         "=",
                         "\"playerIsChoosing\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Delete"
                       },
                       "parameters": [
                         "ChooseWordList",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }

@@ -1,7 +1,6 @@
 {
   "author": "Arthur Pacaud (arthuro555)",
   "category": "",
-  "description": "When masked, the masked object is only visible through the mask.",
   "extensionNamespace": "",
   "fullName": "Object Masking",
   "helpPath": "",
@@ -10,6 +9,7 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/transition-masked.svg",
   "shortDescription": "Use a sprite or a shape painter to mask another object.",
   "version": "2.1.1",
+  "description": "When masked, the masked object is only visible through the mask.",
   "origin": {
     "identifier": "SpriteMasking",
     "name": "gdevelop-extension-store"
@@ -29,14 +29,23 @@
       "description": "Define a shape painter as a mask of an object.",
       "fullName": "Mask an object with a shape painter",
       "functionType": "Action",
-      "group": "",
       "name": "MaskWithShapePainter",
-      "private": false,
       "sentence": "Mask _PARAM1_ with mask _PARAM2_",
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "const maskObject = eventsFunctionContext.getObjects(\"Mask\")[0];\nif (!maskObject) return;\n\nconst maskedObjects = eventsFunctionContext.getObjects(\"Masked\");\nfor (const maskedObject of maskedObjects) {\n    const maskedRenderer = maskedObject.getRendererObject(); \n    maskedRenderer.mask = maskObject.getRendererObject();\n}\n\n",
+          "inlineCode": [
+            "const maskObject = eventsFunctionContext.getObjects(\"Mask\")[0];",
+            "if (!maskObject) return;",
+            "",
+            "const maskedObjects = eventsFunctionContext.getObjects(\"Masked\");",
+            "for (const maskedObject of maskedObjects) {",
+            "    const maskedRenderer = maskedObject.getRendererObject(); ",
+            "    maskedRenderer.mask = maskObject.getRendererObject();",
+            "}",
+            "",
+            ""
+          ],
           "parameterObjects": "masked",
           "useStrict": true,
           "eventsSheetExpanded": false
@@ -44,22 +53,13 @@
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Object to mask",
-          "longDescription": "",
           "name": "Masked",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "objectList"
         },
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Shape painter to use as a mask",
-          "longDescription": "",
           "name": "Mask",
-          "optional": false,
           "supplementaryInformation": "PrimitiveDrawing::Drawer",
           "type": "objectList"
         }
@@ -70,14 +70,23 @@
       "description": "Define a sprite as a mask of an object.",
       "fullName": "Mask an object with a sprite",
       "functionType": "Action",
-      "group": "",
       "name": "Mask",
-      "private": false,
       "sentence": "Mask _PARAM1_ with mask _PARAM2_",
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "const maskObject = eventsFunctionContext.getObjects(\"Mask\")[0];\nif (!maskObject) return;\n\nconst maskedObjects = eventsFunctionContext.getObjects(\"Masked\");\nfor (const maskedObject of maskedObjects) {\n    const maskedRenderer = maskedObject.getRendererObject(); \n    maskedRenderer.mask = maskObject.getRendererObject();\n}\n\n",
+          "inlineCode": [
+            "const maskObject = eventsFunctionContext.getObjects(\"Mask\")[0];",
+            "if (!maskObject) return;",
+            "",
+            "const maskedObjects = eventsFunctionContext.getObjects(\"Masked\");",
+            "for (const maskedObject of maskedObjects) {",
+            "    const maskedRenderer = maskedObject.getRendererObject(); ",
+            "    maskedRenderer.mask = maskObject.getRendererObject();",
+            "}",
+            "",
+            ""
+          ],
           "parameterObjects": "masked",
           "useStrict": true,
           "eventsSheetExpanded": false
@@ -85,22 +94,13 @@
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Object to mask",
-          "longDescription": "",
           "name": "Masked",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "objectList"
         },
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Sprite object to use as a mask",
-          "longDescription": "",
           "name": "Mask",
-          "optional": false,
           "supplementaryInformation": "Sprite",
           "type": "objectList"
         }
@@ -111,14 +111,20 @@
       "description": "Remove the mask of the specified object.",
       "fullName": "Remove the mask",
       "functionType": "Action",
-      "group": "",
       "name": "Unmask",
-      "private": false,
       "sentence": "Remove the mask of _PARAM1_",
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "const maskedObjects = eventsFunctionContext.getObjects(\"Masked\");\n\nfor (const maskedObject of maskedObjects) {\n    const maskedRenderer = maskedObject.getRendererObject(); \n    maskedRenderer.mask = null;\n}\n",
+          "inlineCode": [
+            "const maskedObjects = eventsFunctionContext.getObjects(\"Masked\");",
+            "",
+            "for (const maskedObject of maskedObjects) {",
+            "    const maskedRenderer = maskedObject.getRendererObject(); ",
+            "    maskedRenderer.mask = null;",
+            "}",
+            ""
+          ],
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
@@ -126,18 +132,14 @@
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Object with a mask to remove",
-          "longDescription": "",
           "name": "Masked",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "objectList"
         }
       ],
       "objectGroups": []
     }
   ],
-  "eventsBasedBehaviors": []
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
 }

@@ -3,9 +3,6 @@
   "disableInputWhenNotFocused": true,
   "mangledName": "Experiment",
   "name": "Experiment",
-  "oglFOV": 90,
-  "oglZFar": 500,
-  "oglZNear": 1,
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -32,7 +29,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "debug",
       "persistentUuid": "b49b0b35-35d0-42df-95d4-024f14c246e2",
       "width": 0,
@@ -48,7 +44,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "Timer",
       "persistentUuid": "f7bcad2f-0392-45fc-a988-160ee4e3b23a",
       "width": 0,
@@ -64,7 +59,6 @@
       "customSize": true,
       "height": 30,
       "layer": "",
-      "locked": false,
       "name": "NewTextInput",
       "persistentUuid": "ca5a753a-db39-44d3-b116-51939c7111b4",
       "width": 119,
@@ -85,7 +79,6 @@
       "customSize": true,
       "height": 30,
       "layer": "",
-      "locked": false,
       "name": "NewTextInput2",
       "persistentUuid": "fc07acac-6251-4efa-b886-3310ac59adc7",
       "width": 137,
@@ -104,6 +97,7 @@
   ],
   "objects": [
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "debug",
@@ -116,6 +110,7 @@
       "behaviors": [],
       "string": "Text",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -124,6 +119,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "Timer",
@@ -136,6 +132,7 @@
       "behaviors": [],
       "string": "Text",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -144,6 +141,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "NewTextInput",
       "tags": "",
       "type": "TextInput::TextInputObject",
@@ -167,6 +165,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "name": "NewTextInput2",
       "tags": "",
       "type": "TextInput::TextInputObject",
@@ -190,6 +189,7 @@
       }
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "NewText",
@@ -202,6 +202,7 @@
       "behaviors": [],
       "string": "Text",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -217,169 +218,140 @@
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "TextObject::String"
           },
           "parameters": [
             "debug",
             "=",
             "ToString(Time(\"sec\")) + NewLine() + \"Timer: \" + VariableString(Time.timer) + NewLine() + \"MinElapsed: \" + VariableString(Time.secsElapsed) + NewLine() + \"bool: \" +VariableString(bool) + NewLine() + NewLine() + ToString(Time(\"timestamp\"))"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "TextObject::String"
           },
           "parameters": [
             "Timer",
             "=",
             "ToString(60 - RealtimeTimer::ElapsedTime())"
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "inverted": false,
             "value": "KeyPressed"
           },
           "parameters": [
             "",
             "F1"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "BuiltinCommonInstructions::Once"
           },
-          "parameters": [],
-          "subInstructions": []
+          "parameters": []
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "RealtimeTimer::startTimer"
           },
           "parameters": [
             "",
             ""
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "inverted": false,
             "value": "TextObject::String"
           },
           "parameters": [
             "Timer",
             "=",
             "\"0\""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "BuiltinCommonInstructions::Once"
           },
-          "parameters": [],
-          "subInstructions": []
+          "parameters": []
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "RealtimeTimer::startTimer"
           },
           "parameters": [
             "",
             ""
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "inverted": false,
             "value": "BuiltinCommonInstructions::CompareNumbers"
           },
           "parameters": [
             "ToNumber(NewTextInput.Text())",
             ">",
             "ToNumber(NewTextInput2.Text())"
-          ],
-          "subInstructions": []
+          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "SetSceneVariableAsBoolean"
           },
           "parameters": [
             "bool",
             "True"
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "inverted": false,
             "value": "BuiltinCommonInstructions::CompareNumbers"
           },
           "parameters": [
             "ToNumber(NewTextInput.Text())",
             "<",
             "ToNumber(NewTextInput2.Text())"
-          ],
-          "subInstructions": []
+          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "SetSceneVariableAsBoolean"
           },
           "parameters": [
             "bool",
             "False"
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     }
   ],
   "layers": [

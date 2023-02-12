@@ -1,7 +1,6 @@
 {
   "author": "",
   "category": "General",
-  "description": "This extension gives a random word in a predefined list. This list may grow bigger the more the extension evolve.\n\n**Made by Oxey405 for Rinax**\n\nThis extension is open source and under MIT license !",
   "extensionNamespace": "",
   "fullName": "Random words",
   "helpPath": "",
@@ -10,6 +9,13 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/file-word-box.svg",
   "shortDescription": "Give a random word in a given list",
   "version": "1.0.0",
+  "description": [
+    "This extension gives a random word in a predefined list. This list may grow bigger the more the extension evolve.",
+    "",
+    "**Made by Oxey405 for Rinax**",
+    "",
+    "This extension is open source and under MIT license !"
+  ],
   "tags": [
     "Words",
     "Random",
@@ -28,28 +34,47 @@
       "description": "Get a random word in a predefined list",
       "fullName": "Get a random word in a list",
       "functionType": "StringExpression",
-      "group": "",
       "name": "randomWord",
-      "private": false,
       "sentence": "",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [],
-          "events": []
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "let words = [\"Piano\",\"Guitar\",\"Xylophone\",\"Drums\",\"Saxophone\",\"Trumpet\",\"Bass\",\"Violin\",\"Bell\",\"Harp\",\"Trombone\",\"Horn\",\"Accordion\",\"Triangle\",\"Organ\",\"Bagpipes\",\"Plane\",\"Car\",\"Bus\",\"Boat\",\"Motorbike\",\"Bike\",\"Snowmobile\",\"Tractor\",\"Scooter\",\"Cat\",\"Dog\",\"Parrot\",\"Rabbit\",\"Frog\",\"Fox\",\"Wolf\",\"Giraffe\",\"Monkey\",\"Platypus\",\"Fish\",\"Shark\",\"Dolphin\",\"Tree\",\"Flower\",\"Penguin\",\"Panda\",\"Snake\",\"Pig\",\"Cow\",\"Chicken\",\"Hamster\",\"Fish\",\"Pufferfish\",\"Eel\",\"Iguana\",\"Lizard\",\"Centipede\",\"Bumblebee\",\"Ladybug\",\"Horse\",\"Bird\",\"Hawk\",\"Eagle\",\"Raven\",\"Octopus\",\"Blob\",\"Pen\",\"Pencil\",\"Mouse\",\"Keyboard\",\"Printer\",\"Computer\",\"Speaker\",\"House\",\"Hotel\",\"Hospital\",\"Police\",\"Mayor\",\"Robber\",\"Doctor\"];\nlet word ;\nchooseWord();\nfunction chooseWord() {\nlet wordID = Math.round(Math.random()*100);\n if(wordID > words.length-1) {\n     chooseWord()\n} else {\n    word = words[wordID];\n    eventsFunctionContext.returnValue = word;\n    return;\n}\n}\n\n\n\n",
+          "inlineCode": [
+            "let words = [\"Piano\",\"Guitar\",\"Xylophone\",\"Drums\",\"Saxophone\",\"Trumpet\",\"Bass\",\"Violin\",\"Bell\",\"Harp\",\"Trombone\",\"Horn\",\"Accordion\",\"Triangle\",\"Organ\",\"Bagpipes\",\"Plane\",\"Car\",\"Bus\",\"Boat\",\"Motorbike\",\"Bike\",\"Snowmobile\",\"Tractor\",\"Scooter\",\"Cat\",\"Dog\",\"Parrot\",\"Rabbit\",\"Frog\",\"Fox\",\"Wolf\",\"Giraffe\",\"Monkey\",\"Platypus\",\"Fish\",\"Shark\",\"Dolphin\",\"Tree\",\"Flower\",\"Penguin\",\"Panda\",\"Snake\",\"Pig\",\"Cow\",\"Chicken\",\"Hamster\",\"Fish\",\"Pufferfish\",\"Eel\",\"Iguana\",\"Lizard\",\"Centipede\",\"Bumblebee\",\"Ladybug\",\"Horse\",\"Bird\",\"Hawk\",\"Eagle\",\"Raven\",\"Octopus\",\"Blob\",\"Pen\",\"Pencil\",\"Mouse\",\"Keyboard\",\"Printer\",\"Computer\",\"Speaker\",\"House\",\"Hotel\",\"Hospital\",\"Police\",\"Mayor\",\"Robber\",\"Doctor\"];",
+            "let word ;",
+            "chooseWord();",
+            "function chooseWord() {",
+            "let wordID = Math.round(Math.random()*100);",
+            " if(wordID > words.length-1) {",
+            "     chooseWord()",
+            "} else {",
+            "    word = words[wordID];",
+            "    eventsFunctionContext.returnValue = word;",
+            "    return;",
+            "}",
+            "}",
+            "",
+            "",
+            "",
+            ""
+          ],
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
         }
       ],
+      "expressionType": {
+        "type": "string"
+      },
       "parameters": [],
       "objectGroups": []
     }
   ],
-  "eventsBasedBehaviors": []
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
 }

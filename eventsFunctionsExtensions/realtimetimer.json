@@ -1,7 +1,6 @@
 {
   "author": "",
   "category": "",
-  "description": "",
   "extensionNamespace": "",
   "fullName": "",
   "helpPath": "",
@@ -10,6 +9,7 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Arrows/Arrows_circle_arrow_indicator_right.svg",
   "shortDescription": "",
   "version": "",
+  "description": "",
   "tags": [],
   "authorIds": [
     "04k8NyykaEcX1dVkWEmXN2OxZDD3"
@@ -17,12 +17,9 @@
   "dependencies": [],
   "eventsFunctions": [
     {
-      "description": "",
       "fullName": "Start realtime timer",
       "functionType": "Action",
-      "group": "",
       "name": "startTimer",
-      "private": false,
       "sentence": "Start (or reset) realtime timer (Start time: _PARAM1_)",
       "events": [
         {
@@ -31,75 +28,58 @@
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "Time.timer",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "Time.started",
                 "=",
                 "GetArgumentAsNumber(\"startTime\")"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "SetSceneVariableAsBoolean"
               },
               "parameters": [
                 "startTimer",
                 "False"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "SetSceneVariableAsBoolean"
               },
               "parameters": [
                 "startTimer",
                 "True"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Starting time",
-          "longDescription": "",
           "name": "startTime",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "expression"
         }
       ],
       "objectGroups": []
     },
     {
-      "description": "",
       "fullName": "",
       "functionType": "Expression",
-      "group": "",
       "name": "ElapsedTime",
-      "private": false,
       "sentence": "",
       "events": [
         {
@@ -107,31 +87,26 @@
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "SceneVariableAsBoolean"
               },
               "parameters": [
                 "startTimer",
                 "True"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "Time.timer",
                 "=",
                 "round((Time(\"timestamp\") - Variable(Time.started)) / 1000)"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -139,21 +114,22 @@
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "SetReturnNumber"
               },
               "parameters": [
                 "Variable(Time.timer)"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
+      "expressionType": {
+        "type": "expression"
+      },
       "parameters": [],
       "objectGroups": []
     }
   ],
-  "eventsBasedBehaviors": []
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
 }

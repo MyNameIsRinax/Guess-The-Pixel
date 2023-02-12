@@ -1,7 +1,6 @@
 {
   "author": "",
   "category": "",
-  "description": "",
   "extensionNamespace": "",
   "fullName": "Input Essentials",
   "helpPath": "",
@@ -10,6 +9,7 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Text Editing/Text Editing_input_field.svg",
   "shortDescription": "",
   "version": "0.1",
+  "description": "",
   "tags": [],
   "authorIds": [
     "nopQpwNfA7acPQcwExwWmp1NgLZ2"
@@ -27,9 +27,7 @@
           "description": "Set CSS style",
           "fullName": "Set CSS style",
           "functionType": "Action",
-          "group": "",
           "name": "setStyle",
-          "private": false,
           "sentence": "_PARAM0_ set style _PARAM2_ : _PARAM3_",
           "events": [
             {
@@ -37,18 +35,22 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let obj = objects[0]\nlet input = obj._renderer._input\nlet attr = eventsFunctionContext.getArgument(\"attr\")\nlet value = eventsFunctionContext.getArgument(\"value\")\ninput.style[attr] = value",
+                  "inlineCode": [
+                    "let obj = objects[0]",
+                    "let input = obj._renderer._input",
+                    "let attr = eventsFunctionContext.getArgument(\"attr\")",
+                    "let value = eventsFunctionContext.getArgument(\"value\")",
+                    "input.style[attr] = value"
+                  ],
                   "parameterObjects": "Object",
                   "useStrict": true,
                   "eventsSheetExpanded": false
@@ -58,43 +60,25 @@
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "TextInput::TextInputObject",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "InputEssentials::InputEssentials",
               "type": "behavior"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Attribute",
-              "longDescription": "",
               "name": "attr",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "string"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "value",
-              "longDescription": "",
               "name": "value",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "string"
             }
           ],
@@ -104,9 +88,7 @@
           "description": "Check if mouse is hover input",
           "fullName": "Check if mouse is hover input",
           "functionType": "Condition",
-          "group": "",
           "name": "isHover",
-          "private": false,
           "sentence": "_PARAM0_ mouse is hover?",
           "events": [
             {
@@ -114,22 +96,30 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "Object",
                     "_hasMouseListener",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let obj = objects[0]\nlet input = obj._renderer._input\ninput.addEventListener(\"mouseenter\", ev =>{\n    obj.getVariables().get(\"_isMouseHover\").setBoolean(true)\n})\n\ninput.addEventListener(\"mouseleave\", ev =>{\n    obj.getVariables().get(\"_isMouseHover\").setBoolean(false)\n})",
+                  "inlineCode": [
+                    "let obj = objects[0]",
+                    "let input = obj._renderer._input",
+                    "input.addEventListener(\"mouseenter\", ev =>{",
+                    "    obj.getVariables().get(\"_isMouseHover\").setBoolean(true)",
+                    "})",
+                    "",
+                    "input.addEventListener(\"mouseleave\", ev =>{",
+                    "    obj.getVariables().get(\"_isMouseHover\").setBoolean(false)",
+                    "})"
+                  ],
                   "parameterObjects": "Object",
                   "useStrict": true,
                   "eventsSheetExpanded": false
@@ -140,18 +130,15 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetObjectVariableAsBoolean"
                       },
                       "parameters": [
                         "Object",
                         "_hasMouseListener",
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
@@ -160,15 +147,13 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "Object",
                     "_hasMouseListener",
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
@@ -178,82 +163,64 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
                         "Object",
                         "_isMouseHover",
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetReturnBoolean"
                       },
                       "parameters": [
                         "True"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
                         "Object",
                         "_isMouseHover",
                         "False"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SetReturnBoolean"
                       },
                       "parameters": [
                         "False"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "TextInput::TextInputObject",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "InputEssentials::InputEssentials",
               "type": "behavior"
             }
@@ -264,9 +231,7 @@
           "description": "On key down",
           "fullName": "On key down",
           "functionType": "Condition",
-          "group": "",
           "name": "onKeyDown",
-          "private": false,
           "sentence": "_PARAM0_ On key down _PARAM2_",
           "events": [
             {
@@ -274,18 +239,37 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let obj = objects[0]\nlet input = obj._renderer._input\nlet key = eventsFunctionContext.getArgument(\"Key\")\nlet variable = obj.getVariables().get(`_isKeyDown_${key}`)\nconsole.log(\"init listeners\", key)\nif(key == \"Return\")\n    key = \"Enter\"\nif(!key.includes(\"Numpad\"))\n    if(key.includes(\"Num\"))\n        key = key.replace(\"Num\", \"Digit\")\n\ninput.addEventListener(\"keydown\", ev =>{\n    if(ev.code==key)\n        variable.setBoolean(true)\n})\n\ninput.addEventListener(\"keyup\", ev =>{\n    if(ev.code==key)\n        variable.setBoolean(false)\n})",
+                  "inlineCode": [
+                    "let obj = objects[0]",
+                    "let input = obj._renderer._input",
+                    "let key = eventsFunctionContext.getArgument(\"Key\")",
+                    "let variable = obj.getVariables().get(`_isKeyDown_${key}`)",
+                    "console.log(\"init listeners\", key)",
+                    "if(key == \"Return\")",
+                    "    key = \"Enter\"",
+                    "if(!key.includes(\"Numpad\"))",
+                    "    if(key.includes(\"Num\"))",
+                    "        key = key.replace(\"Num\", \"Digit\")",
+                    "",
+                    "input.addEventListener(\"keydown\", ev =>{",
+                    "    if(ev.code==key)",
+                    "        variable.setBoolean(true)",
+                    "})",
+                    "",
+                    "input.addEventListener(\"keyup\", ev =>{",
+                    "    if(ev.code==key)",
+                    "        variable.setBoolean(false)",
+                    "})"
+                  ],
                   "parameterObjects": "Object",
                   "useStrict": true,
                   "eventsSheetExpanded": false
@@ -294,7 +278,13 @@
             },
             {
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "let obj = objects[0]\nlet key = eventsFunctionContext.getArgument(\"Key\")\nlet variable = obj.getVariables().get(`_isKeyDown_${key}`)\n\neventsFunctionContext.returnValue = variable.getAsBoolean()",
+              "inlineCode": [
+                "let obj = objects[0]",
+                "let key = eventsFunctionContext.getArgument(\"Key\")",
+                "let variable = obj.getVariables().get(`_isKeyDown_${key}`)",
+                "",
+                "eventsFunctionContext.returnValue = variable.getAsBoolean()"
+              ],
               "parameterObjects": "Object",
               "useStrict": true,
               "eventsSheetExpanded": false
@@ -302,33 +292,20 @@
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "TextInput::TextInputObject",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "InputEssentials::InputEssentials",
               "type": "behavior"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Key",
-              "longDescription": "",
               "name": "Key",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "key"
             }
           ],
@@ -338,14 +315,16 @@
           "description": "Focus on a text input",
           "fullName": "Set unfocus",
           "functionType": "Action",
-          "group": "",
           "name": "setUnfocus",
-          "private": false,
           "sentence": "Unfocus on _PARAM0_ ",
           "events": [
             {
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "let obj = objects[0]\nlet input = obj._renderer._input\ndocument.querySelector('canvas').focus() // remove canvas focus",
+              "inlineCode": [
+                "let obj = objects[0]",
+                "let input = obj._renderer._input",
+                "document.querySelector('canvas').focus() // remove canvas focus"
+              ],
               "parameterObjects": "Object",
               "useStrict": true,
               "eventsSheetExpanded": true
@@ -353,22 +332,14 @@
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "TextInput::TextInputObject",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "InputEssentials::InputEssentials",
               "type": "behavior"
             }
@@ -379,14 +350,17 @@
           "description": "Focus on a text input",
           "fullName": "Set focus",
           "functionType": "Action",
-          "group": "",
           "name": "setFocus",
-          "private": false,
           "sentence": "Focus on _PARAM0_ ",
           "events": [
             {
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "let obj = objects[0]\nlet input = obj._renderer._input\ndocument.querySelector('canvas').blur() // remove canvas focus\ninput.focus()",
+              "inlineCode": [
+                "let obj = objects[0]",
+                "let input = obj._renderer._input",
+                "document.querySelector('canvas').blur() // remove canvas focus",
+                "input.focus()"
+              ],
               "parameterObjects": "Object",
               "useStrict": true,
               "eventsSheetExpanded": true
@@ -394,22 +368,14 @@
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "TextInput::TextInputObject",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "InputEssentials::InputEssentials",
               "type": "behavior"
             }
@@ -417,7 +383,9 @@
           "objectGroups": []
         }
       ],
-      "propertyDescriptors": []
+      "propertyDescriptors": [],
+      "sharedPropertyDescriptors": []
     }
-  ]
+  ],
+  "eventsBasedObjects": []
 }

@@ -15,8 +15,9 @@
     "projectUuid": "43873802-9910-43aa-8de2-3eeb4d021634",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.0.3",
+    "version": "0.0.4",
     "name": "Guess the Pixel",
     "description": "A multiplayer draw & guess game that is heavily inspired from skribbl.io",
     "author": "Rinexus Games",
@@ -71,9 +72,14 @@
       "showGDevelopSplash": false,
       "showProgressBar": true
     },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
     "authorIds": [
       "04k8NyykaEcX1dVkWEmXN2OxZDD3"
     ],
+    "authorUsernames": [],
     "categories": [
       "multiplayer"
     ],
@@ -237,6 +243,7 @@
   },
   "objects": [
     {
+      "assetStoreId": "",
       "height": 32,
       "name": "background",
       "tags": "",
@@ -248,6 +255,7 @@
       "behaviors": []
     },
     {
+      "assetStoreId": "",
       "bottomMargin": 24,
       "height": 32,
       "leftMargin": 24,
